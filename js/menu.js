@@ -2,7 +2,7 @@ var Menu = (function(Menu,$){
   ('use strict');
 
   $(document).ready( function(event) {
-    buildMenu('/menu_generator.php')
+    buildMenu('/js/menu.json');
   });
 
 

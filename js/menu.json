@@ -1,8 +1,1 @@
-[
-  {"text":"Domov","url":"\/index.html"},
-  {"text":"Hry","url":"\/games\/games.html","items":
-    {"url":"\/games\/games.html","0":
-      {"text":"Chinese Checkers","url":"\/games\/checkers.html"}
-    }
-  }
-]
+[{"text":"Domov","url":"\/index.html"},{"text":"Hry","url":"\/games\/games.html","items":[{"text":"Chinese Checkers","url":"\/games\/checkers.html"}]},{"text":"LVL1","url":"\/index.html","items":[{"text":"LVL2","url":"\/index.html"},{"text":"LVL2.1","url":"\/index.html","items":[{"text":"LVL3","url":"\/index.html"},{"text":"LVL3.1","url":"\/index.html"}]}]}]

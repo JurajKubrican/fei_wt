@@ -1,0 +1,21 @@
+.checkers-row{
+  width:100%;
+  height:11%;
+}
+
+.checkers-cell{
+  width:11%;
+  height:100%;
+  display:inline-block;
+}
+#checkers{
+  position:relative;
+  height:540px;
+  width:540px;
+}
+.checkers-ball{
+  border-radius: 50%;
+	width: 50%;
+	height: 50%;
+  background-color:black;
+}

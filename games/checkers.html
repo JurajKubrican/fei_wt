@@ -4,24 +4,36 @@
 <head>
     <title>Projekt</title>
     <meta charset="utf-8">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/menu.css">
+        <link rel="stylesheet" href="/css/checkers.css">
+    <script src="/js/menu.js"></script>
+        <script src="/js/checkers.js"></script>
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="main_navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
 
-    <div class="jumbotron text-center">
-        <h1>Chinese checkers FTW</h1>
-        <div id="counter"></div>
-    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                TODO:CHECKERS GAME;
-            </div>
-        </div>
+        <div id="checkers"></div>
     </div>
 
 </body>
