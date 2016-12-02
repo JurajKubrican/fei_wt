@@ -8,7 +8,7 @@ var Menu = (function(Menu,$){
 
   function buildMenu(url){
     $.get(url,function(data){
-      data = JSON.parse(data);
+      //data = JSON.parse(data);
       $('#main_navbar').html(walkMenu(data,0));
     });
   }
