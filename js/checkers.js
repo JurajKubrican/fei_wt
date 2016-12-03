@@ -71,7 +71,7 @@ var Checkers = (function(Checkers,$){
     if($('.checkers-ball',cell.el).length)
       return false;
 
-    if(!(Math.abs( ball.x - cell.x ) === 2 && ball.y ===ball.y || Math.abs( ball.y - cell.y ) === 2 && ball.x ===ball.x))
+    if(!(Math.abs( ball.x - cell.x ) === 2 && ball.y ===cell.y || Math.abs( ball.y - cell.y ) === 2 && ball.x ===cell.x))
       return false;
 
       console.log(ball,cell);
