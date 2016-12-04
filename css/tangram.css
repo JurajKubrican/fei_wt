@@ -1,0 +1,108 @@
+ .block{
+    position:absolute;
+    left: 600px;
+}
+
+#square {
+    background: url("kosostvorec.png");
+    width: 250px;
+    height: 250px;
+    top: 300px;
+    left: 600px;
+    z-index: 6;
+}
+
+#triangle1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 125px 125px 125px 125px;
+    border-color: transparent rgba(0,0,0,0.6) transparent transparent;
+    top: 150px;
+    z-index: 6;
+}
+
+#triangle2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 250px 0 250px 250px;
+    border-color: transparent transparent transparent rgba(0,0,0,0.4);
+    top: 300px;
+    z-index: 1;
+}
+
+#triangle3 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 250px 250px 0 250px;
+    border-color: rgba(0,0,0,0.7) transparent transparent transparent;
+    top: 450px;
+    z-index: 1;
+}
+#triangle6 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 125px 125px 125px 125px;
+    border-color: transparent transparent rgba(0,0,0,0.5) transparent;
+    top: 450px;
+}
+
+#triangle4 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 250px 250px;
+    border-color: transparent transparent rgba(0,0,0,0.6) transparent;
+    top: 600px
+    z-index: 4;
+}
+
+#triangle5 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 125px 125px 125px 0;
+    border-color: transparent rgba(0,0,0,0.7) transparent transparent;
+    top: -500px;
+}
+
+#parallelogram {
+	width: 250px;
+	height: 125px;
+	-webkit-transform: skew(-45deg);
+	   -moz-transform: skew(-45deg);
+	     -o-transform: skew(-45deg);
+	background: rgba(0,0,0,0.8);
+    top: 400px;
+    z-index: 5;
+}
+
+/*Page layout*/
+#blockTray {
+	float: left;
+	height: 100%;
+	width: 20%;
+    padding:5px;
+}
+
+#canvas {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+	height: 500px;
+	width: 500px;
+  background-color: black;
+  z-index: -5;
+}
+
+#result {
+  display: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
