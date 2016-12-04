@@ -60,8 +60,7 @@ $(document).ready(function() {
            if (7 <= Math.abs($('#triangle6').offset().top - topoffset - 125)){
              return;
            }
-           console.log('ideto');
-            $('#result').show();
+           $('#modal').show();
         }
 
       //  var angle = 90;
