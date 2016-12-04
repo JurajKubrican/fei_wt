@@ -1,0 +1,13 @@
+.timeline{
+  margin:5px;
+  background-color:red;
+  width:100%;
+  height:10px;
+  position: relative;
+}
+.timeline-item{
+  position: absolute;
+  width:10px;
+  height:10px;
+  background-color: black;
+}

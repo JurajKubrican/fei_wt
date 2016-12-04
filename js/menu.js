@@ -1,4 +1,4 @@
-var Menu = (function(Menu,$){
+(function($){
   ('use strict');
 
   $(document).ready( function(event) {
@@ -53,4 +53,4 @@ var Menu = (function(Menu,$){
 
 
 
-}(Menu||{},jQuery))
+}(jQuery))
