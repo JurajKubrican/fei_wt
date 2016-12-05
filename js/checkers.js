@@ -2,10 +2,12 @@ var Checkers = (function(Checkers,$){
   ('use strict');
 
   var root;
+  var moves = 0;
 
   function buildBoard(boardEl){
 
     root = $(boardEl);
+    root.append('<div id="cehckers-result">');
 
     var board =[
     [-1,-1,-1,  1, 1, 1,  -1,-1,-1],
@@ -54,6 +56,51 @@ var Checkers = (function(Checkers,$){
     })
   }
 
+  function isMoveLegal(ball,cell,boardEl){
+
+    if($('.checkers-ball',cell.el).length)
+      return false;
+
+    if(!(Math.abs( ball.x - cell.x ) === 2 && ball.y ===cell.y || Math.abs( ball.y - cell.y ) === 2 && ball.x ===cell.x))
+      return false;
+
+    var middleBall = $('.checkers-cell[data-x=' + (( ball.x + cell.x)/2) + '][data-y=' + (( ball.y + cell.y)/2) + ']>.checkers-ball',boardEl);
+    if( !middleBall.length )
+      return false;
+
+    return middleBall;
+  }
+
+
+  function isEndGame(boardEl){
+    var endgame = true;
+    $('.checkers-ball',boardEl).each(function(ball){
+      var ball = {
+        x:parseInt($(this).parent().attr('data-x')),
+        y:parseInt($(this).parent().attr('data-y')),
+      };
+      if((
+         $('.checkers-cell[data-x=' + (ball.x + 1) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-cell[data-x=' + (ball.x + 2) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-border[data-x=' + (ball.x + 2) + '][data-y=' + (ball.y) + ']',boardEl).length
+      )||(
+         $('.checkers-cell[data-x=' + (ball.x - 1) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-cell[data-x=' + (ball.x - 2) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-border[data-x=' + (ball.x - 2) + '][data-y=' + (ball.y) + ']',boardEl).length
+      )||(
+         $('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y + 1) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y + 2) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-border[data-x=' + (ball.x) + '][data-y=' + (ball.y + 2) + ']',boardEl).length
+      )||(
+         $('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y - 1) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y - 2) + '] > .checkers-ball',boardEl).length &&
+        !$('.checkers-border[data-x=' + (ball.x) + '][data-y=' + (ball.y -2) + ']',boardEl).length
+      ))
+      endgame = false;
+      return false
+    })
+    return endgame;
+  }
 
   function resolveMove (e,ui){
     var ball = {
@@ -68,16 +115,13 @@ var Checkers = (function(Checkers,$){
       y:parseInt($(this).attr('data-y')),
     };
 
-    if($('.checkers-ball',cell.el).length)
-      return false;
+    var middleBall = isMoveLegal(ball,cell,boardEl)
 
-    if(!(Math.abs( ball.x - cell.x ) === 2 && ball.y ===cell.y || Math.abs( ball.y - cell.y ) === 2 && ball.x ===cell.x))
-      return false;
+    var endgame = isEndGame(boardEl);
 
-      console.log(ball,cell);
-    var middleBall = $('.checkers-cell[data-x=' + (( ball.x + cell.x)/2) + '][data-y=' + (( ball.y + cell.y)/2) + ']>.checkers-ball',boardEl);
-    if( !middleBall.length )
-      return false;
+    if(!middleBall){
+      return;
+    }
 
 
     ball.el.remove();
@@ -86,7 +130,10 @@ var Checkers = (function(Checkers,$){
       containment:boardEl,
       revert: true,
     });
-
+    var results = 'moves:' + ++moves +'<br>'+
+    'balls:' + $('.checkers-ball',boardEl).length +'<br>'+
+    'endgame:' + endgame +'<br>'
+    $('#cehckers-result',boardEl).html(results);
     middleBall.remove();
 
   }

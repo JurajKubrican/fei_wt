@@ -21,5 +21,6 @@ $pamiatky = [
   ],
 ];
 
+file_put_contents('js/pamiatky.json',json_encode($pamiatky));
 echo json_encode($pamiatky);
 ?>

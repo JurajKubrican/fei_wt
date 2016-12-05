@@ -25,7 +25,7 @@ $menu = [
     'items' =>[
       (object)[
         'text'=> 'Zoznam',
-        'url' => 'pamaiatky.html',
+        'url' => 'pamiatky.html',
       ],
       (object)[
         'text'=> 'Mapa/Casova OS',
@@ -58,6 +58,6 @@ $menu = [
     ],
   ],
 ];
-
+file_put_contents('js/menu.json',json_encode($menu));
 echo json_encode($menu);
 ?>
