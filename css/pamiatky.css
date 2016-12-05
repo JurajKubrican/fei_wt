@@ -1,0 +1,47 @@
+@import "compass/css3";
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  margin: 15px;
+}
+
+.col{
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#left {
+  background-image: linear-gradient(#fff,#ccc);
+}
+
+#right {
+  background-image: linear-gradient(#ccc,#fff);
+}
+
+@media all and (min-width: 800px) {
+  .col{
+    min-width: 40%;
+    width: 46%;
+  }
+  #left,#right {
+    flex: 1 auto;
+  }
+}
+
+body {
+  padding: 2em;
+}
