@@ -2,6 +2,16 @@
 
 Job log:
 ========
+
+* 5.12.2016 Jan Sedivy:<br>
+Zapalkove hlavolamy - done
+
+* 5.12 Jan Sedivy:<br>
+Meniny - done
+
+* 5.12 Jan Sedivy:<br>
+Pripomienkovac - done
+
 * 2.12.2016 Juraj Kubrican:<br>
 Chinese checkers - done
 menu fix
@@ -18,3 +28,5 @@ Urobil som štruktúru projektu, initial commit, vytvoril som visits counter, st
  <div id="counter"></div>
  <script language="javascript">checkVisitsCookie();</script>
 ```
+
+
