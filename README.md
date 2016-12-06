@@ -14,7 +14,7 @@ Ulohy:
 8. Mato - casova os + mapa
 9. Alenka - pamiatky - template
   1. Adam - Stary most, Solivar
-  2. Alenka - ??
+  2. Alenka - Mestská hvezdáreň Prešov, Ludwigov mlyn v Bratislave
   3. Jano - hvezdáreň Skalnaté pleso, mlyn Jána Maticu
   4. Juro - ??
   5. Mato - ??
