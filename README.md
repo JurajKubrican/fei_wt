@@ -19,7 +19,7 @@ Ulohy:
   4. Juro - ??
   5. Mato - ??
 10. Hra
-  1. Adam - hanoi
+  1. Adam - puzzle
   2. Alenka - tangram
   3. Jano - zapalky
   4. Juro - checkers
