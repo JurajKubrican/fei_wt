@@ -13,7 +13,7 @@ Ulohy:
   2. ?? - obrazok mapa
 8. ?? - casova os + mapa
 9. Alenka - pamiatky - template
-  1. Adam - ??
+  1. Adam - Stary most, Solivar
   2. Alenka - ??
   3. Jano - ??
   4. Juro - ??
