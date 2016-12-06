@@ -29,6 +29,9 @@ Ulohy:
 
 Job log:
 ========
+* 6.12.2016 Adam Maskulka:<br>
+Zemepisne puzzle - done
+Technicke pamiatky: Stary most, Solivar
 
 * 5.12.2016 Jan Sedivy:<br>
 Zapalkove hlavolamy - done
