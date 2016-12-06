@@ -17,7 +17,17 @@ $pamiatky = [
     'img' => 'img/solivar.jpg',
     'opis' => 'Solivar v Prešove, národná kultúrna pamiatka patrí medzi najvýznamnejšie technické pamiatky na Slovensku. Je to unikátny komplex technických objektov na čerpanie a varenie soli zo soľanky, pochádzajúci zo 17. storočia. K objektom na ťažbu kamennej soli a čerpanie soľanky v Solivare patrí najmä šachta Leopold, četerne (rezervoáre soľanky), huta , varňa , sklad soli (komory), kováčske dielne a klopačka (turňa).',
   ],
-
+  (object)[
+    'nazov'=> 'Tre.Teplice železničná stanica',
+    'rokVzniku' => '40.roky 20.st.',
+    'sirka' => '48.9097626',
+    'dlzka' => '18.171751500000028',
+    'img' => 'img/studna.jpeg',
+    'opis' =>'Na trati Trenčianske Teplice – Trenčianske Teplá a späť, pravidelne premáva vláčik, ktorý bežne nazývame „električkou“. Je raritou medzi slovenskými železničnými traťami, pretože bola prvou verejne prevádzkovanou elektrifikovanou železničnou traťou na území Slovenska. Budova železničnej stanice v Trenčianskych Tepliciach bola postavená v roku 1941. Dodnes slúži pôvodnému účelu a je považovaná za kultúrnu pamiatku. Pôvodná železničná trať, na ktorej bola zahájená prevádzka 27. júla 1909, sa výstavbou stanice skrátila o 400 m.',
+  ],
+  /*
+  * Mato
+  */
   (object)[
     'nazov'=> 'Trenčiansky hrad hradná studňa',
     'rokVzniku' => 1557/8-1570,
@@ -26,15 +36,21 @@ $pamiatky = [
     'img' => 'img/studna.jpeg',
     'opis' =>'K hradnej studni sa viaže povesť o láske tureckého šľachtica Omara ku krásnej Fatime, zajatkyni trenčianskeho hradného pána Štefana Zápoľského.Aby Fatimu vyslobodil, prisľúbil Omar, že vykope na Trenčianskom hrade v tvrdej skale studňu. Po tri roky kopal so svojimi druhmi, až skala skutočne vydala vodu, z kopáčov však prežili iba nemnohí. Prvú čašu vody Omar podal Zápoľskému so slovami: "Vodu máš Zápoľský, ale srdce nemáš". Keď Omar odvážal oslobodenú Fatimu na koni z hradu, zachytil sa jej závoj na šípovom kríku. Na tom mieste dodnes stojí najstarší hostinec v Trenčíne, nazývaný "Fatima", alebo v skorších časoch i "Závoj".',
   ],
+  /*
+  * Juraj
+  */
   (object)[
-    'nazov'=> 'Tre.Teplice železničná stanica',
-    'rokVzniku' => '40.roky 20.st.',
-    'sirka' => '48.9097626',
-    'dlzka' => '18.171751500000028',
-    'img' => 'img/studna.jpeg',
-    'opis' =>'Na trati Trenčianske Teplice – Trenčianske Teplá a späť, pravidelne premáva vláčik, ktorý bežne nazývame „električkou“. Je raritou medzi slovenskými železničnými traťami, pretože bola prvou verejne prevádzkovanou elektrifikovanou železničnou traťou na území Slovenska. Budova železničnej stanice v Trenčianskych Tepliciach bola postavená v roku 1941. Dodnes slúži pôvodnému účelu a je považovaná za kultúrnu pamiatku. Pôvodná železničná trať, na ktorej bola zahájená prevádzka 27. júla 1909, sa výstavbou stanice skrátila o 400 m.',
-  ]
-];
+    'nazov'=> 'Silo Metodova',
+    'rokVzniku' => 1930,
+    'sirka' => '48.156370',
+    'dlzka' => '17.126872',
+  ],
+  (object)[
+    'nazov'=> 'KOSICE RANDOM DEBUG',
+    'rokVzniku' => 1957,
+    'sirka' => '48.715750',
+    'dlzka' => '21.260854',
+  ];
 
 file_put_contents('js/pamiatky.json',json_encode($pamiatky));
 echo json_encode($pamiatky);
