@@ -9,24 +9,24 @@ $( document ).ready(function() {
     var poDragCnt = 0;
     var keDragCnt = 0;
 
-    printScoresGraph();
+
 
     $("#divMapa").height($("#divPuzzle").height());
-    
-    $('[data-toggle="popover"]').popover(); 
+
+    $('[data-toggle="popover"]').popover();
 
     /*$("#bZobrazitGraf").click(function(){
       printScoresGraph();
     });*/
-    
+
     $("#bNovaHra").click(function(){
       location.reload();
     });
-    
+
 
     /*var totalScore = 0;*/
 
-/************************************************************************************************************/ 
+/************************************************************************************************************/
 
     $("#imgBA").draggable({snap: "#divBA", revert: true, snapMode: "inner",
       start: function(event, ui){
@@ -56,7 +56,7 @@ $( document ).ready(function() {
         $(this).zIndex(1);
       }
     });
-    
+
     $("#imgTN").draggable({snap: "#divTN", revert: true, snapMode: "inner",
       start: function(event, ui){
         $(this).zIndex(2);
@@ -106,12 +106,12 @@ $( document ).ready(function() {
       }
     });
 
-/************************************************************************************************************/    
+/************************************************************************************************************/
 
     $("#divBA").droppable({
       accept: "#imgBA",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgBA").draggable({revert: false});
         $("#imgBA").draggable("destroy");
         if(baDragCnt == 1){totalScore++;};
@@ -125,13 +125,13 @@ $( document ).ready(function() {
             printScoresGraph();
         };
 
-      }   
+      }
     });
 
     $("#divTT").droppable({
       accept: "#imgTT",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgTT").draggable({revert: false});
         $("#imgTT").draggable("destroy");
         if(ttDragCnt == 1){totalScore++;};
@@ -144,57 +144,57 @@ $( document ).ready(function() {
             $("#youWon").fadeIn("fast");
             printScoresGraph();
         };
-      }     
+      }
     });
 
     $("#divNR").droppable({
       accept: "#imgNR",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgNR").draggable({revert: false});
         $("#imgNR").draggable("destroy");
         if(nrDragCnt == 1){totalScore++;};
         if(nrDragCnt == 2){totalScore = totalScore + 0.5};
         $("#pScore").text("Aktuálny počet bodov: "+totalScore);
-        
+
         droppedRegions++;
         if(droppedRegions == 8){
             saveScoreToCookie();
             $("#youWon").fadeIn("fast");
             printScoresGraph();
         };
-      }     
+      }
     });
 
     $("#divTN").droppable({
       accept: "#imgTN",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgTN").draggable({revert: false});
         $("#imgTN").draggable("destroy");
         if(tnDragCnt == 1){totalScore++;};
         if(tnDragCnt == 2){totalScore = totalScore + 0.5};
         $("#pScore").text("Aktuálny počet bodov: "+totalScore);
-        
+
         droppedRegions++;
         if(droppedRegions == 8){
             saveScoreToCookie();
             $("#youWon").fadeIn("fast");
             printScoresGraph();
-        };    
+        };
       }
     });
 
     $("#divBB").droppable({
       accept: "#imgBB",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgBB").draggable({revert: false});
         $("#imgBB").draggable("destroy");
         if(bbDragCnt == 1){totalScore++;};
         if(bbDragCnt == 2){totalScore = totalScore + 0.5};
         $("#pScore").text("Aktuálny počet bodov: "+totalScore);
-        
+
         droppedRegions++;
         //console.log("droppedRegions: "+droppedRegions);
         if(droppedRegions == 8){
@@ -202,38 +202,38 @@ $( document ).ready(function() {
             $("#youWon").fadeIn("fast");
             printScoresGraph();
         };
-      }      
+      }
     });
 
     $("#divZA").droppable({
       accept: "#imgZA",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgZA").draggable({revert: false});
         $("#imgZA").draggable("destroy");
         if(zaDragCnt == 1){totalScore++;};
         if(zaDragCnt == 2){totalScore = totalScore + 0.5};
         $("#pScore").text("Aktuálny počet bodov: "+totalScore);
-        
+
         droppedRegions++;
         if(droppedRegions == 8){
             saveScoreToCookie();
             $("#youWon").fadeIn("fast");
             printScoresGraph();
         };
-      }      
+      }
     });
 
     $("#divPO").droppable({
       accept: "#imgPO",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgPO").draggable({revert: false});
         $("#imgPO").draggable("destroy");
         if(poDragCnt == 1){totalScore++;};
         if(poDragCnt == 2){totalScore = totalScore + 0.5};
         $("#pScore").text("Aktuálny počet bodov: "+totalScore);
-        
+
         droppedRegions++;
         if(droppedRegions == 8){
             saveScoreToCookie();
@@ -247,13 +247,13 @@ $( document ).ready(function() {
     $("#divKE").droppable({
       accept: "#imgKE",
       tolerance: "fit",
-      drop: function( event, ui ) {      
+      drop: function( event, ui ) {
         $("#imgKE").draggable({revert: false});
         $("#imgKE").draggable("destroy");
         if(keDragCnt == 1){totalScore++;};
         if(keDragCnt == 2){totalScore = totalScore + 0.5};
         $("#pScore").text("Aktuálny počet bodov: "+totalScore);
-        
+
         droppedRegions++;
         if(droppedRegions == 8){
             saveScoreToCookie();
@@ -261,6 +261,6 @@ $( document ).ready(function() {
             printScoresGraph();
         };
       }
-      
+
     });
 });
