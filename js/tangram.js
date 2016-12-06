@@ -17,20 +17,6 @@ $(document).ready(function() {
             if (sol[i] === true)
               $('#modal').show();
           }
-          console.log('triang1 left: ' + Math.abs($('#triangle1').offset().left - topoffset ));
-          console.log('triang1 top: ' + Math.abs($('#triangle1').offset().top - leftoffset ));
-          console.log('triang2 left: ' + Math.abs($('#triangle2').offset().left - topoffset ));
-          console.log('triang2 top: ' + Math.abs($('#triangle2').offset().top - leftoffset ));
-          console.log('triang3 left: ' + Math.abs($('#triangle3').offset().left - topoffset ));
-          console.log('triang3 top: ' + Math.abs($('#triangle3').offset().top - leftoffset ));
-          console.log('triang4 left: ' + Math.abs($('#triangle4').offset().left - topoffset ));
-          console.log('triang4 top: ' + Math.abs($('#triangle4').offset().top - leftoffset ));
-          console.log('triang5 left: ' + Math.abs($('#triangle6').offset().left - topoffset ));
-          console.log('triang5 top: ' + Math.abs($('#triangle6').offset().top - leftoffset ));
-          console.log('para left: ' + Math.abs($('#parallelogram').offset().left - topoffset ));
-          console.log('para top: ' + Math.abs($('#parallelogram').offset().top - leftoffset ));
-          console.log('squa left: ' + Math.abs($('#square').offset().left - topoffset ));
-          console.log('squa top: ' + Math.abs($('#square').offset().top - leftoffset ));
         }
 
         function checkSolution1(){
