@@ -5,7 +5,6 @@
     buildMenu('js/menu.json');
   });
 
-
   function buildMenu(url){
     $.get(url,function(data){
       //data = JSON.parse(data);
@@ -44,13 +43,4 @@
     }
     return ul;
   }
-
-
-
-
-
-
-
-
-
 }(jQuery))
