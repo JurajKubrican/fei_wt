@@ -17,11 +17,20 @@ $pamiatky = [
     'img' => 'img/solivar.jpg',
     'opis' => 'Solivar v Prešove, národná kultúrna pamiatka patrí medzi najvýznamnejšie technické pamiatky na Slovensku. Je to unikátny komplex technických objektov na čerpanie a varenie soli zo soľanky, pochádzajúci zo 17. storočia. K objektom na ťažbu kamennej soli a čerpanie soľanky v Solivare patrí najmä šachta Leopold, četerne (rezervoáre soľanky), huta , varňa , sklad soli (komory), kováčske dielne a klopačka (turňa).',
   ],
+  /*
+  * Juraj
+  */
   (object)[
-    'nazov'=> 'pamiatka3',
-    'rokVzniku' => 1995,
-    'sirka' => '123',
-    'dlzka' => '456',
+    'nazov'=> 'Silo Metodova',
+    'rokVzniku' => 1930,
+    'sirka' => '48.156370',
+    'dlzka' => '17.126872',
+  ],
+  (object)[
+    'nazov'=> 'KOSICE RANDOM DEBUG',
+    'rokVzniku' => 1957,
+    'sirka' => '48.715750',
+    'dlzka' => '21.260854',
   ],
 ];
 
