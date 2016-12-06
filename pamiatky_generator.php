@@ -1,6 +1,9 @@
 <?php
 
 $pamiatky = [
+  /*
+  * Adam
+  */
   (object)[
     'nazov'=> 'Starý most Františka Jozefa I.',
     'rokVzniku' => 1891,
@@ -17,6 +20,9 @@ $pamiatky = [
     'img' => 'img/solivar.jpg',
     'opis' => 'Solivar v Prešove, národná kultúrna pamiatka patrí medzi najvýznamnejšie technické pamiatky na Slovensku. Je to unikátny komplex technických objektov na čerpanie a varenie soli zo soľanky, pochádzajúci zo 17. storočia. K objektom na ťažbu kamennej soli a čerpanie soľanky v Solivare patrí najmä šachta Leopold, četerne (rezervoáre soľanky), huta , varňa , sklad soli (komory), kováčske dielne a klopačka (turňa).',
   ],
+  /*
+  * Jano
+  */
   (object)[
     'nazov'=> 'Hvezdáreň Skalnaté Pleso',
     'rokVzniku' => 1940,
@@ -33,11 +39,26 @@ $pamiatky = [
     'img' => 'img/Mlyn_jana_maticu.jpg',
     'opis' => 'Mlyn reprezentuje typ tzv. Pobrežného kolového mlyna. Postavený je na pilótach z agátového dreva v toku rieky na ostrohe, vytvorenej Malým Dunajom a jeho ľavobrežným prítokom Suchým potokom. Budova mlyna rámovej konštrukcie s doštenou výplňou je z brehu prístupná drevenou lávkou so zábradlím. Veľké lopatkové dvojvencové hnacie koleso na spodnú vodu je v prúde rieky upevnené na podpornej stolici s doštenou plošinou. Dominantným objektom mlyna je drevená mlynica na pilótoch, so sedlovou strechou krovovej hambálkovej konštrukcie, krytá šindľom. Zaujímavosťou je štrbinové okienko, ktorým mlynár pozoroval chod náhonového kolesa, ako aj príchod gazdov s melivom z druhého brehu rieky. Dvojvencové lopatkové koleso s drevenými ramenami má priemer 7 m, široké je 2,5m. Pobrežný kolový mlyn v Tomášikove postavil v r. 1893 mlynár Ján Matica, starý otec posledného majiteľa rovnakého mena (narodený r. 1920). Mlyn sa zachoval v pôvodnom stave, bez rušivých zásahov do konštrukcie, s uceleným prevádzkyschopným mlynským zariadením. V mlyne sa mlelo až do r. 1960. V r. 1982 bol mlyn obnovený a zariadený ako expozícia Vlastivedného múzea v Galante.',
   ],
+  /*
+  * Juraj
+  */
   (object)[
     'nazov'=> 'pamiatka3',
     'rokVzniku' => 1995,
     'sirka' => '123',
     'dlzka' => '456',
+  ],
+  (object)[
+    'nazov'=> 'Silo Metodova',
+    'rokVzniku' => 1930,
+    'sirka' => '48.156370',
+    'dlzka' => '17.126872',
+  ],
+  (object)[
+    'nazov'=> 'KOSICE RANDOM DEBUG',
+    'rokVzniku' => 1957,
+    'sirka' => '48.715750',
+    'dlzka' => '21.260854',
   ],
 ];
 
