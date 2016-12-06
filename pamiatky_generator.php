@@ -22,7 +22,7 @@ $pamiatky = [
   ],
   (object)[
     'nazov'=> 'Tre.Teplice železničná stanica',
-    'rokVzniku' => '40.roky 20.st.',
+    'rokVzniku' => 1940,
     'sirka' => '48.9097626',
     'dlzka' => '18.171751500000028',
     'img' => 'img/studna.jpeg',
@@ -33,7 +33,7 @@ $pamiatky = [
   */
   (object)[
     'nazov'=> 'Trenčiansky hrad hradná studňa',
-    'rokVzniku' => 1557/8-1570,
+    'rokVzniku' => 1557,
     'sirka' => '48.89429166666667',
     'dlzka' => '18.044444444444448',
     'img' => 'img/studna.jpeg',
@@ -78,7 +78,9 @@ $pamiatky = [
     'rokVzniku' => 1957,
     'sirka' => '48.715750',
     'dlzka' => '21.260854',
-  ];
+  ]
+];
+
 
 file_put_contents('js/pamiatky.json',json_encode($pamiatky));
 echo json_encode($pamiatky);

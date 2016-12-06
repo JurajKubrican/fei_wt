@@ -60,9 +60,9 @@
 
   function showOnMap(pamiatka,i){
     // |
-    var latOffset = -0.02;
+    var latOffset = -0.15;
     var latMin = 47.728086 + latOffset;
-    var latMax = 49.089861 + latOffset;
+    var latMax = 49.629861 + latOffset;
 
     // --
     var longOffset = -0.05;
