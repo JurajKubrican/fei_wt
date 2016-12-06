@@ -38,6 +38,8 @@
 	
 }
 
+
+
 #b7,#b14,#b21{
 		position: absolute; 
 		top: 76%; 
@@ -100,6 +102,23 @@
 	text-align: center; 
 	font-weight: bold;
 }
+#b50{
+	position: relative; 
+	vertical-align: right-top; 
+	display: inline-block; 
+	width: 180px;  
+
+	font-size: 12px; 
+	height: 200px; 
+	border:#dadada;
+	border-style:solid;
+	border-radius:30px;
+	
+	text-align: center; 
+	font-weight: bold;
+	
+}
+
 #b2,#b9,#b16{
 position: absolute; 
 bottom: 0px; 
