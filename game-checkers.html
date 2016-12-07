@@ -4,37 +4,48 @@
 <head>
     <title>Projekt</title>
     <meta charset="utf-8">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+<!--menu STUFF -->
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/checkers.css">
     <script src="js/menu.js"></script>
-    <script src="js/checkers.js"></script>
+
+<!--BG STUFF -->
+    <link rel="stylesheet" href="css/bg.css">
+    <script src="js/vendor/jquery.parallax.js"></script>
+    <script src="js/bg.js"></script>
+
+<!--GAME STUFF-->
+    <link rel="stylesheet" href="css/game-checkers.css">
+    <script src="js/game-checkers.js"></script>
+
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
-      </div>
-      <div id="main_navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-      </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-  </nav>
-
-    <div class="container">
-        <div id="checkers"></div>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="main_navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+    <div class="jumbotron text-center">
+      <div id="checkers"></div>
     </div>
+  </div>
 
 </body>
 
