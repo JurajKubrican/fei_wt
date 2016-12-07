@@ -1,3 +1,4 @@
+var JSONData;
 (function($){
   ('use strict');
 
@@ -11,6 +12,7 @@
   function loadPamiatky(url){
     $.get(url,function(data){
       $('#timeline-wrapper').html(showPamiatky(data));
+      JSONData = data;
       tooltipsterize();
     });
   }
@@ -80,4 +82,41 @@
 
     //console.log(leftPos,topPos);
   }
+
 }(jQuery))
+
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: 48.876804,
+            lng: 19.629142
+        },
+        zoom: 8
+    });
+    var infowindow = new google.maps.InfoWindow();
+
+    $.get('js/pamiatky.json',function(data){
+      for(i in data){
+        console.log(data[i]);
+        var pos = new google.maps.LatLng(data[i].sirka,data[i].dlzka);
+            var marker = new google.maps.Marker({
+                position: pos,
+                map: map,
+                title: data[i].nazov + "\nVznik: " + data[i].rokVzniku
+            });
+            marker.setMap(map);
+            google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                return function () {
+                    infowindow.setContent(data[i].nazov);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+      }
+    });
+
+    google.maps.event.addDomListener(window, "resize", function() {
+        var center = map.getCenter();
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center);
+    });
+}

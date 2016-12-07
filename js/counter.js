@@ -25,6 +25,6 @@ function checkVisitsCookie() {
     if(visit == "")
       visit = 0;
     visit++;
-    setCookie("visitCount", visit, 30);
+    setCookie("visitCount", visit, 600000);
     $('#counter').append("Počet návštev: " + visit);
 }
