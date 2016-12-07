@@ -1,4 +1,5 @@
-var JSONData;
+var infowindow;
+var dataJSON;
 (function($){
   ('use strict');
 
@@ -11,8 +12,8 @@ var JSONData;
 
   function loadPamiatky(url){
     $.get(url,function(data){
+      dataJSON = data;
       $('#timeline-wrapper').html(showPamiatky(data));
-      JSONData = data;
       tooltipsterize();
     });
   }
@@ -33,6 +34,7 @@ var JSONData;
     });
     $('.timeline-item').click(function(e){
       var id = $(e.target).data('id');
+      console.log(id);
       $('.tooltipster[data-id=' + id + ']').tooltipster('open');
       $('.tooltipster:not([data-id=' + id + '])').tooltipster('close');
     })
@@ -93,11 +95,11 @@ function initMap() {
         },
         zoom: 8
     });
-    var infowindow = new google.maps.InfoWindow();
+    infowindow = new google.maps.InfoWindow();
 
     $.get('js/pamiatky.json',function(data){
       for(i in data){
-        console.log(data[i]);
+        //console.log(data[i]);
         var pos = new google.maps.LatLng(data[i].sirka,data[i].dlzka);
             var marker = new google.maps.Marker({
                 position: pos,
@@ -107,7 +109,7 @@ function initMap() {
             marker.setMap(map);
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
-                    infowindow.setContent(data[i].nazov);
+                    infowindow.setContent(data[i].nazov + " ," + data[i].rokVzniku);
                     infowindow.open(map, marker);
                 }
             })(marker, i));
