@@ -1,4 +1,3 @@
-@import "compass/css3";
 
 .wrapper {
   display: -webkit-box;
@@ -40,8 +39,4 @@
   #left,#right {
     flex: 1 auto;
   }
-}
-
-body {
-  padding: 2em;
 }

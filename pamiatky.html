@@ -2,44 +2,48 @@
 <html lang="sk">
 
 <head>
-    <title>Projekt</title>
+    <title>Pamiatky</title>
     <meta charset="utf-8">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" href="css/pamiatky.css">
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/pamiatky.js"></script>
+    <script src="js/vendor/jquery.parallax.js"></script>
+    <script src="js/bg.js"></script>
     <script src="js/menu.js"></script>
-
-    <style>
-    .container>div>div{
-      float:left;
-      min-width:200px;
-
-    }
-    </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="main_navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
+    <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="main_navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
+
+    <div class="wrapper">
+      <div class="col" id="left">
+        <h1>Pamiatka 1</h1>
+        <p>Lorem ipsum dolor sit amet, vis cu quaestio consetetur deterruisset, tempor commodo apeirian has et. Eros viderer pro eu, nulla mundi salutandi per eu. Mundi indoctum dissentiunt mel in. Diceret fierent ea pri, prodesset inciderint scribentur ei mei, vix ei graeco vituperata.Lorem ipsum dolor sit amet, vis cu quaestio consetetur deterruisset, tempor commodo apeirian has et. Eros viderer pro eu, nulla mundi salutandi per eu. Mundi indoctum dissentiunt mel in. Diceret fierent ea pri, prodesset inciderint scribentur ei mei, vix ei graeco vituperata.</p>
       </div>
-      <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-      </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-  </nav>
-
-  <div class="container">
-    <div id="pamiatky">
-
+      <div class="col" id="right">
+        <h1>Pamiatka 2</h1>
+        <p>Lorem ipsum dolor sit amet, vis cu quaestio consetetur deterruisset, tempor commodo apeirian has et. Eros viderer pro eu, nulla mundi salutandi per eu. Mundi indoctum dissentiunt mel in. Diceret fierent ea pri, prodesset inciderint scribentur ei mei, vix ei graeco vituperata.</p>
+      </div>
     </div>
   </div>
 </body>

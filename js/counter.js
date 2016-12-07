@@ -28,3 +28,6 @@ function checkVisitsCookie() {
     setCookie("visitCount", visit, 600000);
     $('#counter').append("Počet návštev: " + visit);
 }
+document.addEventListener("DOMContentLoaded",function(){
+  checkVisitsCookie();
+})

@@ -22,10 +22,11 @@
       $(this).css('background-color',colors[Math.floor(Math.random() * 8)])
       $(this).css('width',size)
       $(this).css('height',size)
-      $(this).css('margin-top',(Math.random() * 100)+'vh')
-      $(this).css('margin-left',(Math.random() * 100)+'vw')
+      $(this).css('margin-top',(Math.random() * 100 - 5)+'vh')
+      $(this).css('margin-left',(Math.random() * 100 - 5)+'vw')
     })
     $('#parallax').parallax();
     $('#parallax').show();
+
   })
 }(jQuery))
