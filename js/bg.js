@@ -18,8 +18,8 @@
       $('#parallax').append($('<li>',{class:'layer','data-depth' : Math.random()}));
     }
     $('#parallax > li').each(function(){
-      var size = (50 + Math.random() * 250)+'px'
-      $(this).css('background-color',colors[Math.floor(Math.random() * 8)])
+      var size = (50 + (1 - $(this).data('depth')) * 250)+'px'
+      $(this).css('background-color',colors[Math.floor($(this).data('depth') * 8)])
       $(this).css('width',size)
       $(this).css('height',size)
       $(this).css('margin-top',(Math.random() * 100 - 5)+'vh')

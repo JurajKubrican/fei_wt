@@ -7,7 +7,8 @@ var Checkers = (function(Checkers,$){
   function buildBoard(boardEl){
 
     root = $(boardEl);
-    root.append('<div id="cehckers-result">');
+    root.append($('<textarea>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
+    root.append($('<button>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
 
     var board =[
     [-1,-1,-1,  1, 1, 1,  -1,-1,-1],
@@ -131,19 +132,31 @@ var Checkers = (function(Checkers,$){
       containment:boardEl,
       revert: true,
     });
+        middleBall.remove();
     var results =
-    '<div class="row"><div class="col-xs-1">moves:</div><div class="col-xs-1">' + ++moves +'</div></div>'
-    '<div class="row"><div class="col-xs-1">balls:</div><div class="col-xs-1">' +  $('.checkers-ball',boardEl).length +'</div></div>'
+    'balls:' +  $('.checkers-ball',boardEl).length +
+    '\nmoves:' + ++moves;
     //+ 'endgame:' + endgame +'<br>'
     $('#cehckers-result',boardEl).html(results);
-    middleBall.remove();
+
 
   }
+
+  function makeResponsive(boardEl){
+    console.log('sss');
+    $(window).resize( function(event) {
+      var size = Math.min(boardEl.parent().width(),boardEl.parent().height())+10;
+      console.log(size,boardEl.parent().width(),boardEl.parent().height());
+      boardEl.css({width:size + 'px',height:size + 'px'});
+    })
+  }
+
 
   return{
     initBoard: function(boardEl){
       buildBoard(boardEl);
       hookDraggable(boardEl);
+      makeResponsive(boardEl)
     }
 }
 

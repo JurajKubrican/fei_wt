@@ -30,6 +30,9 @@
 }
 #cehckers-result{
   position:absolute;
+  width:110px;
+  resize:none;
+  right:0px;
 }
 
 .checkers-cell .checkers-cell-fill{
