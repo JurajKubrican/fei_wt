@@ -14,10 +14,15 @@ Ulohy:
 8. Mato - casova os + mapa
 9. Alenka - pamiatky - template
   1. Adam - Stary most, Solivar
+<<<<<<< HEAD
   2. Alenka - ??
   3. Jano - ??
+=======
+  2. Alenka - Mestská hvezdáreň Prešov, Ludwigov mlyn v Bratislave
+  3. Jano - hvezdáreň Skalnaté pleso, mlyn Jána Maticu
+>>>>>>> origin/master
   4. Juro - ??
-  5. Mato - ??
+  5. Mato - srudna Trencin, stanica Trenčianske teplice
 10. Hra
   1. Adam - puzzle
   2. Alenka - tangram
