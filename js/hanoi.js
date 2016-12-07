@@ -55,7 +55,6 @@ function checkHighCookie() {
 function load() {
     $("#effect").hide();
 	hideAllMessages();
-    showHowToPlay();
     checkHighCookie();
 }
 
@@ -134,8 +133,4 @@ function showMessage(type) {
     msgElement.fadeOut("slow", function () {
         $("." + type).hide();
     });
-}
-
-function showHowToPlay() {
-    $('.howToPlay').show();
 }
