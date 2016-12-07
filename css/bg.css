@@ -1,0 +1,11 @@
+#parallax{
+  top:0;
+  left:0;
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+#parallax>li{
+  border-radius: 50%;
+}
