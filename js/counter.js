@@ -39,6 +39,10 @@ function breadcrumbs() {
     }
     crumb.push(newCrumb);
 
+    if(crumb.length > 5){
+      crumb.shift();
+    }
+
     setCookie("breadcrumbs", JSON.stringify(crumb), 600000);
 
     for(i in crumb){
