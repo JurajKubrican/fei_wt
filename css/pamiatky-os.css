@@ -8,13 +8,15 @@
 .timeline-item{
   border-radius: 5px;
   position: absolute;
-  width: 10px;
+  width: 5px;
   height: 30px;
   top: -10px;
   background-color: black;
 }
 .timeline-item:hover,.timeline-item.timeline-active{
   background-color: yellow;
+  height: 40px;
+  top: -15px;
 }
 .map-marker{
   color:red;
