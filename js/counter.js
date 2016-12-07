@@ -28,6 +28,30 @@ function checkVisitsCookie() {
     setCookie("visitCount", visit, 600000);
     $('#counter').append("Počet návštev: " + visit);
 }
+
+function breadcrumbs() {
+    var crumb = getCookie("breadcrumbs");
+    var newCrumb = {title:document.title,url:document.location.pathname}
+    if(crumb == ""){
+      crumb = [];
+    }else{
+      crumb = JSON.parse(crumb)
+    }
+    crumb.push(newCrumb);
+
+    if(crumb.length > 5){
+      crumb.shift();
+    }
+
+    setCookie("breadcrumbs", JSON.stringify(crumb), 600000);
+
+    for(i in crumb){
+      $('#breadcrumbs').append($('<a>',{html:crumb[i].title,href:crumb[i].url}) );
+    }
+
+}
+
 document.addEventListener("DOMContentLoaded",function(){
   checkVisitsCookie();
+  breadcrumbs();
 })
