@@ -8,7 +8,7 @@
   function buildMenu(url){
     $.get(url,function(data){
       //data = JSON.parse(data);
-      $('#main_navbar').html(walkMenu(data,0));
+      $('#main_navbar').prepend(walkMenu(data,0));
     });
   }
 
