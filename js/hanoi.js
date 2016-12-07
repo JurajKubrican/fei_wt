@@ -137,9 +137,5 @@ function showMessage(type) {
 }
 
 function showHowToPlay() {
-    $('.howToPlay').slidePanel({
-        triggerName: '#rightPanel',
-        triggerTopPos: '110px',
-        panelTopPos: '100px'
-    });
+    $('.howToPlay').show();
 }
