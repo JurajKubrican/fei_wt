@@ -9,6 +9,9 @@ $( document ).ready(function() {
     var poDragCnt = 0;
     var keDragCnt = 0;
 
+    var startTime = new Date();
+    var solveTime;
+
 
 
     $("#divMapa").height($("#divPuzzle").height());
@@ -21,6 +24,7 @@ $( document ).ready(function() {
 
     $("#bNovaHra").click(function(){
       location.reload();
+      startTime = new Date();
     });
 
 
@@ -120,9 +124,8 @@ $( document ).ready(function() {
 
         droppedRegions++;
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
 
       }
@@ -140,9 +143,8 @@ $( document ).ready(function() {
 
         droppedRegions++;
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
       }
     });
@@ -159,9 +161,8 @@ $( document ).ready(function() {
 
         droppedRegions++;
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
       }
     });
@@ -178,9 +179,8 @@ $( document ).ready(function() {
 
         droppedRegions++;
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
       }
     });
@@ -198,9 +198,8 @@ $( document ).ready(function() {
         droppedRegions++;
         //console.log("droppedRegions: "+droppedRegions);
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
       }
     });
@@ -217,9 +216,8 @@ $( document ).ready(function() {
 
         droppedRegions++;
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
       }
     });
@@ -236,12 +234,11 @@ $( document ).ready(function() {
 
         droppedRegions++;
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
       }
-      
+
     });
 
     $("#divKE").droppable({
@@ -256,9 +253,8 @@ $( document ).ready(function() {
 
         droppedRegions++;
         if(droppedRegions == 8){
-            saveScoreToCookie();
-            $("#youWon").fadeIn("fast");
-            printScoresGraph();
+          solveTime = (new Date() - startTime) / 1000;
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
         };
       }
 
