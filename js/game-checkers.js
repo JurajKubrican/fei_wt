@@ -1,6 +1,6 @@
-var Checkers = (function(Checkers,$){
+var Checkers = (function($,swal){
   ('use strict');
-
+//TODO: reset button
   var root;
   var moves = 0;
 
@@ -8,7 +8,7 @@ var Checkers = (function(Checkers,$){
 
     root = $(boardEl);
     root.append($('<textarea>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
-    root.append($('<button>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
+    //root.append($('<button>',{id:'cehckers-reset',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
 
     var board =[
     [-1,-1,-1,  1, 1, 1,  -1,-1,-1],
@@ -23,6 +23,22 @@ var Checkers = (function(Checkers,$){
     [-1,-1,-1,  1, 1, 1,  -1,-1,-1],
     [-1,-1,-1,  1, 1, 1,  -1,-1,-1],
     ];
+
+    // board =[
+    // [-1,-1,-1,  0, 0, 0,  -1,-1,-1],
+    // [-1,-1,-1,  0, 0, 0,  -1,-1,-1],
+    // [-1,-1,-1,  0, 0, 0,  -1,-1,-1],
+    //
+    // [ 0, 0, 0,  0, 0, 0,   0, 0, 0],
+    // [ 0, 0, 1,  1, 0, 0,   0, 0, 0],
+    // [ 0, 0, 0,  0, 0, 0,   0, 0, 0],
+    //
+    // [-1,-1,-1,  0, 0, 0,  -1,-1,-1],
+    // [-1,-1,-1,  0, 0, 0,  -1,-1,-1],
+    // [-1,-1,-1,  0, 0, 0,  -1,-1,-1],
+    // ];
+
+
 
     for (i in board){
 
@@ -81,26 +97,39 @@ var Checkers = (function(Checkers,$){
         x:parseInt($(this).parent().attr('data-x')),
         y:parseInt($(this).parent().attr('data-y')),
       };
-      if((
+
+      if(
          $('.checkers-cell[data-x=' + (ball.x + 1) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-cell[data-x=' + (ball.x + 2) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-border[data-x=' + (ball.x + 2) + '][data-y=' + (ball.y) + ']',boardEl).length
-      )||(
+      ){
+        endgame = false;
+      }
+
+      if(
          $('.checkers-cell[data-x=' + (ball.x - 1) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-cell[data-x=' + (ball.x - 2) + '][data-y=' + (ball.y) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-border[data-x=' + (ball.x - 2) + '][data-y=' + (ball.y) + ']',boardEl).length
-      )||(
+      ){
+        endgame = false;
+      }
+      if(
          $('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y + 1) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y + 2) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-border[data-x=' + (ball.x) + '][data-y=' + (ball.y + 2) + ']',boardEl).length
-      )||(
+      ){
+        endgame = false;
+      }
+      if(
          $('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y - 1) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-cell[data-x=' + (ball.x) + '][data-y=' + (ball.y - 2) + '] > .checkers-ball',boardEl).length &&
         !$('.checkers-border[data-x=' + (ball.x) + '][data-y=' + (ball.y -2) + ']',boardEl).length
-      ))
-      endgame = false;
-      return false
+      )
+      {
+        endgame = false;
+      }
     })
+
     return endgame;
   }
 
@@ -119,7 +148,7 @@ var Checkers = (function(Checkers,$){
 
     var middleBall = isMoveLegal(ball,cell,boardEl)
 
-    var endgame = isEndGame(boardEl);
+
 
     if(!middleBall){
       return;
@@ -132,21 +161,21 @@ var Checkers = (function(Checkers,$){
       containment:boardEl,
       revert: true,
     });
-        middleBall.remove();
+    middleBall.remove();
+
+    if (isEndGame()) {
+        swal('you suck at this game');
+    }
     var results =
     'balls:' +  $('.checkers-ball',boardEl).length +
     '\nmoves:' + ++moves;
-    //+ 'endgame:' + endgame +'<br>'
     $('#cehckers-result',boardEl).html(results);
-
 
   }
 
   function makeResponsive(boardEl){
-    console.log('sss');
     $(window).resize( function(event) {
       var size = Math.min(boardEl.parent().width(),boardEl.parent().height())+10;
-      console.log(size,boardEl.parent().width(),boardEl.parent().height());
       boardEl.css({width:size + 'px',height:size + 'px'});
     })
   }
@@ -161,7 +190,7 @@ var Checkers = (function(Checkers,$){
 }
 
 
-}(Checkers,jQuery));
+}(jQuery,swal));
 
 
 
