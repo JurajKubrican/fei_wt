@@ -45,8 +45,13 @@ function breadcrumbs() {
 
     setCookie("breadcrumbs", JSON.stringify(crumb), 600000);
 
-    for(i in crumb){
-      $('#breadcrumbs').append($('<a>',{html:crumb[i].title,href:crumb[i].url}) );
+    for(i = 0;i<5;i++){
+      if (i<4){
+          $('#breadcrumbs').append($('<a>',{html:crumb[i].title,href:crumb[i].url}) ).append(" >> ");
+      }else {
+          $('#breadcrumbs').append($('<a>',{html:crumb[i].title,href:crumb[i].url}) );
+      }
+
     }
 
 }
