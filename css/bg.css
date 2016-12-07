@@ -6,6 +6,9 @@
   height:100%;
   z-index:-1;
 }
-#parallax>li{
+#parallax > li{
   border-radius: 50%;
+}
+body{
+  background-color:rgba(0,0,0,0)
 }

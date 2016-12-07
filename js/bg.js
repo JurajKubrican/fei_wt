@@ -13,6 +13,7 @@
   ]
 
   $(document).ready(function(){
+    $('body>.container').prepend($('<ul>',{id:'parallax'}));
     for(var i = 0; i<20; i++){
       $('#parallax').append($('<li>',{class:'layer','data-depth' : Math.random()}));
     }
