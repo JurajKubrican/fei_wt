@@ -4,11 +4,14 @@
 <head>
     <title>Projekt</title>
     <meta charset="utf-8">
-    <script src="js/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tooltipster.bundle.min.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/pamiatky-os.css">
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/tooltipster.bundle.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/pamiatky-os.js"></script>
     <script src="js/menu.js"></script>
 </head>
@@ -30,7 +33,10 @@
     </div><!--/.container-fluid -->
   </nav>
   <div class="container">
-    <div id="map"></div>
+    <div id="map-wrapper">
+      <img src="img/mapa-geo-big.gif" alt="Mapa slovenska" />
+    </div>
+    Mapa z <a href="http://geography.upol.cz/soubory/lide/smolova/RGSR/ucebnice/mapy.html">http://geography.upol.cz/</a>.
     <div id="timeline-wrapper"></div>
   </div>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKGsVN8OVZ01Atf4gD07mZdiu-iJAaYgw&callback=initMap"

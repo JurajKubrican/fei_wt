@@ -35,6 +35,7 @@ var Checkers = (function(Checkers,$){
         if(!row.hasOwnProperty(1)) continue;
         var cell = row[j];
         var cellEl = $('<div>',{class: (cell === -1)?'checkers-border':'checkers-cell','data-state':cell,'data-x':i,'data-y':j});
+        $('<div>',{class:"checkers-cell-fill"}).appendTo(cellEl);
         if( cell === 1){
           cellEl.append($('<div>',{class:'checkers-ball','data-x':i,'data-y':j}))
         }
@@ -130,9 +131,10 @@ var Checkers = (function(Checkers,$){
       containment:boardEl,
       revert: true,
     });
-    var results = 'moves:' + ++moves +'<br>'+
-    'balls:' + $('.checkers-ball',boardEl).length +'<br>'+
-    'endgame:' + endgame +'<br>'
+    var results =
+    '<div class="row"><div class="col-xs-1">moves:</div><div class="col-xs-1">' + ++moves +'</div></div>'
+    '<div class="row"><div class="col-xs-1">balls:</div><div class="col-xs-1">' +  $('.checkers-ball',boardEl).length +'</div></div>'
+    //+ 'endgame:' + endgame +'<br>'
     $('#cehckers-result',boardEl).html(results);
     middleBall.remove();
 

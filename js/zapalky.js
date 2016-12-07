@@ -1,5 +1,5 @@
 /* Events fired on the drag target */
-
+// drag and drop funkcie su z: http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_ondrag_all
 
 var i;
 var j;
@@ -167,7 +167,7 @@ function ohodnot(){
 		document.getElementById("vysledok").innerHTML="spravne,ziskane body: "+body;
 		document.getElementById("max_body").innerHTML="Najlepšie score: "+maxbody+" b";
 	}
-	//else document.getElementById("vysledok").innerHTML="nespravne";
+
 	
 	
 
@@ -229,17 +229,3 @@ document.addEventListener("drop", function(event) {
     }
 });
 
-
-
-
-/*create zapalkku a if has childNodes
-		var oImg=document.createElement("img");
-oImg.setAttribute('src', 'obr.png');
-oImg.setAttribute('alt', 'na');
-oImg.setAttribute('class','zapalka');
-oImg.setAttribute('draggable','true');
-oImg.setAttribute('id','dragtarget');
-document.getElementById("1").appendChild(oImg);
-if(document.getElementById("1").hasChildNodes()) alert("ahoj");
-
-*/
