@@ -12,6 +12,7 @@
 
 #checkers{
   position:relative;
+  margin:0 auto;
   height:550px;
   width:550px;
   border-radius:50%;
@@ -29,6 +30,9 @@
 }
 #cehckers-result{
   position:absolute;
+  width:110px;
+  resize:none;
+  right:0px;
 }
 
 .checkers-cell .checkers-cell-fill{
@@ -44,8 +48,4 @@
   width: 50%;
   height: 50%;
   margin: 25%;
-}
-
-#cehckers-result{
-
 }

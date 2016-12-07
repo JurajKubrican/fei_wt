@@ -20,16 +20,16 @@
 }
 
 .col{
-  border: 1px solid #ccc;
+  border: 1px solid #e7e7e7;
   width: 100%;
 }
 
-#left {
-  background-image: linear-gradient(#fff,#ccc);
+#left,#left2,#left3,#left4,#left5 {
+  background: #f8f8f8;
 }
 
-#right {
-  background-image: linear-gradient(#ccc,#fff);
+#right,#right2,#right3,#right4,#right5 {
+  background: #f1f1f1;
 }
 
 @media all and (min-width: 800px) {
@@ -39,6 +39,18 @@
   }
   #left,#right {
     flex: 1 auto;
+  }
+  #left2,#right2 {
+    flex: 2 auto;
+  }
+  #left3,#right3 {
+    flex: 3 auto;
+  }
+  #left4,#right4 {
+    flex: 4 auto;
+  }
+  #left5,#right5 {
+    flex: 5 auto;
   }
 }
 

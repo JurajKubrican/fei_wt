@@ -17,14 +17,14 @@ $menu = [
         'text'=> 'Tangram',
         'url' => 'game-tangram.html',
       ],
-	  (object)[
-		'text'=> 'Zápalkový hlavolam',
-		'url' => 'zapalky.html',
-	  ],
-    (object)[
-		'text'=> 'Zemepisné puzzle',
-		'url' => 'puzzle.html',
-	  ],
+  	  (object)[
+    		'text'=> 'Zápalkový hlavolam',
+    		'url' => 'game-zapalky.html',
+  	  ],
+      (object)[
+    		'text'=> 'Zemepisné puzzle',
+    		'url' => 'game-puzzle.html',
+  	  ],
     ],
   ],
   (object)[
@@ -41,6 +41,15 @@ $menu = [
       ],
     ],
   ],
+  (object)[
+    'text'=> 'Pripomienkovac',
+    'url' => 'pripomienkovac.html',
+  ],
+  (object)[
+    'text'=> 'Meniny',
+    'url' => 'meniny.html',
+  ],
+  /*
   (object)[
     'text'=> 'LVL1',
     'url' => 'index.html',
@@ -64,7 +73,7 @@ $menu = [
         ],
       ],
     ],
-  ],
+  ],*/
 ];
 file_put_contents('js/menu.json',json_encode($menu));
 echo json_encode($menu);

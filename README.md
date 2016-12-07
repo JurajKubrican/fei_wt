@@ -4,8 +4,8 @@ Ulohy:
 ========
 1. vsetci - CSS - responsive + TLAC!
 2. ~~Juro - 3urovnove menu~~
-3. Jano - meniny
-4. Jano - pripomienkovac
+3. ~~Jano - meniny
+4. ~~Jano - pripomienkovac
 5. Adam - pocitadlo navstev
 6. Mato - Breadcrumbs
 7. mapa na zaklade GPS suradnic
@@ -14,19 +14,16 @@ Ulohy:
 8. Mato - casova os + mapa
 9. Alenka - pamiatky - template
   1. Adam - Stary most, Solivar
-<<<<<<< HEAD
   2. Alenka - ??
   3. Jano - ??
-=======
   2. Alenka - Mestská hvezdáreň Prešov, Ludwigov mlyn v Bratislave
   3. Jano - hvezdáreň Skalnaté pleso, mlyn Jána Maticu
->>>>>>> origin/master
   4. Juro - ??
   5. Mato - srudna Trencin, stanica Trenčianske teplice
 10. Hra
   1. Adam - puzzle
   2. Alenka - tangram
-  3. Jano - zapalky
+  3. ~~Jano - zapalky~~
   4. Juro - checkerss
   5. Mato - hanoi
 

@@ -14,20 +14,38 @@
     <link rel="stylesheet" type="text/css" href="css/puzzle.css">
 
     <!-- jquery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/vendor/jquery.js"></script>
     <!-- bootstrap javascript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/puzzle.css">
 
     <!--<script src="jquery.js"></script>-->
-    <script src="js/jquery-ui.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
     <script src="js/puzzle.js"></script>
+    <script src="js/counter.js"></script>
 
+    <!--Menu-->
+    <script src="js/menu.js"></script>
 </head>
 
-<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="main_navbar" aria-expanded="false" aria-controls="main_navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
     <section id="puzzle-hra">
         <h2>Puzzle</h2>
         <hr>
@@ -57,14 +75,14 @@
                     <div class="row">
                         <img src="img/TT.png" id="imgTT" class="drag" alt="Trnava">
                         <img src="img/PO.png" id="imgPO" class="drag" alt="Prešov">
-                        <img src="img/ZA.png" id="imgZA" class="drag" alt="Žilina">>
-                        <img src="img/BB.png" id="imgBB" class="drag" alt="Banská Bystrica">>
+                        <img src="img/ZA.png" id="imgZA" class="drag" alt="Žilina">
+                        <img src="img/BB.png" id="imgBB" class="drag" alt="Banská Bystrica">
                     </div>
                     <div class="row">
                         <img src="img/BA.png" id="imgBA" class="drag" alt="Bratislava">
-                        <img src="img/TN.png" id="imgTN" class="drag" alt="Trenčín">>
-                        <img src="img/NR.png" id="imgNR" class="drag" alt="Nitra">>
-                        <img src="img/KE.png" id="imgKE" class="drag" alt="Košice">>
+                        <img src="img/TN.png" id="imgTN" class="drag" alt="Trenčín">
+                        <img src="img/NR.png" id="imgNR" class="drag" alt="Nitra">
+                        <img src="img/KE.png" id="imgKE" class="drag" alt="Košice">
                     </div>
                 </div>
             </div>

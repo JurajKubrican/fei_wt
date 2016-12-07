@@ -38,6 +38,8 @@
 	
 }
 
+
+
 #b7,#b14,#b21{
 		position: absolute; 
 		top: 76%; 
@@ -100,6 +102,23 @@
 	text-align: center; 
 	font-weight: bold;
 }
+#b50{
+	position: relative; 
+	vertical-align: right-top; 
+	display: inline-block; 
+	width: 180px;  
+
+	font-size: 12px; 
+	height: 200px; 
+	border:#dadada;
+	border-style:solid;
+	border-radius:30px;
+	
+	text-align: center; 
+	font-weight: bold;
+	
+}
+
 #b2,#b9,#b16{
 position: absolute; 
 bottom: 0px; 
@@ -159,11 +178,11 @@ background-color: silver;
 #hlavny1{
 	position:relative;
 	width:33%;
-	border-style:solid;
-	border-color:black;
+
 	background-color:#D3D3D3;
 	float:left;
 	left:15%;
+	border-radius:30px;
 	
 }
 
@@ -173,11 +192,10 @@ background-color: silver;
 }
 
 #hlavny2{
+	border-radius:30px;
 	position:relative;
 	width:33%;
-	height:300px;
-	border-style:solid;
-	border-color:black;
+	height:320px;
 	background-color:#D3D3D3;
 	float:right;
 	right:15%;
