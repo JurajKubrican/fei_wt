@@ -25,6 +25,10 @@ $menu = [
     		'text'=> 'Zemepisné puzzle',
     		'url' => 'game-puzzle.html',
   	  ],
+      (object)[
+        'text'=> 'Hanojské veže',
+        'url' => 'game-veze.html',
+      ],
     ],
   ],
   (object)[
