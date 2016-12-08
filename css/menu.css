@@ -148,8 +148,12 @@
     color: white;
 }
 
+#counter {
+  color: #cdd1d2;
+}
+
 #meniny_nav{
-	float:right;
+  float:right;
   color:#cdd1d2;
   margin-right: 15px;
 }
