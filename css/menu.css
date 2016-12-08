@@ -1,11 +1,7 @@
-body{
-  background-color: #FFA343;
-}
-
-
 .navbar-default {
   background-color: #3089a6;
   border-color: #3089a6;
+  border-radius:0;
 }
 .navbar-default .navbar-brand {
   color: #cdd1d2;
