@@ -1,4 +1,4 @@
-@import "compass/css3";
+/*@import "compass/css3";*/
 
 .wrapper {
   display: -webkit-box;
@@ -34,8 +34,8 @@
 
 @media all and (min-width: 800px) {
   .col{
-    min-width: 40%;
-    width: 46%;
+    /*min-width: 40%;
+    width: 46%;*/
   }
   #left,#right {
     flex: 1 auto;
@@ -52,8 +52,4 @@
   #left5,#right5 {
     flex: 5 auto;
   }
-}
-
-body {
-  padding: 2em;
 }

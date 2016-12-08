@@ -125,7 +125,7 @@ $( document ).ready(function() {
         droppedRegions++;
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
 
       }
@@ -144,7 +144,7 @@ $( document ).ready(function() {
         droppedRegions++;
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
       }
     });
@@ -162,7 +162,7 @@ $( document ).ready(function() {
         droppedRegions++;
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+          swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
       }
     });
@@ -180,7 +180,7 @@ $( document ).ready(function() {
         droppedRegions++;
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
       }
     });
@@ -199,7 +199,7 @@ $( document ).ready(function() {
         //console.log("droppedRegions: "+droppedRegions);
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
       }
     });
@@ -217,7 +217,7 @@ $( document ).ready(function() {
         droppedRegions++;
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
       }
     });
@@ -235,7 +235,7 @@ $( document ).ready(function() {
         droppedRegions++;
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+          swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
       }
 
@@ -254,7 +254,7 @@ $( document ).ready(function() {
         droppedRegions++;
         if(droppedRegions == 8){
           solveTime = (new Date() - startTime) / 1000;
-            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd!', "success");
+            swal('Dobrá práca!', 'Úspešne si vyriešil puzzle za '+solveTime+' sekúnd a získal si '+totalScore+' bodov!', "success");
         };
       }
 
