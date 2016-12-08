@@ -55,11 +55,16 @@
 #breadcrumbs{
   float:left;
   margin:10px;
-
+  color:#cdd1d2;
 }
 #breadcrumbs a {
-  color:#fff;
+  color:#cdd1d2;
 }
+#breadcrumbs a:hover {
+  color:#fff;
+  text-decoraton:none;
+}
+
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
