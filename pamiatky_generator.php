@@ -20,6 +20,9 @@ $pamiatky = [
     'img' => 'img/solivar.jpg',
     'opis' => 'Solivar v Prešove, národná kultúrna pamiatka patrí medzi najvýznamnejšie technické pamiatky na Slovensku. Je to unikátny komplex technických objektov na čerpanie a varenie soli zo soľanky, pochádzajúci zo 17. storočia. K objektom na ťažbu kamennej soli a čerpanie soľanky v Solivare patrí najmä šachta Leopold, četerne (rezervoáre soľanky), huta , varňa , sklad soli (komory), kováčske dielne a klopačka (turňa).',
   ],
+    /*
+  * Mato
+  */
   (object)[
     'nazov'=> 'Tre.Teplice železničná stanica',
     'rokVzniku' => 1940,
@@ -28,9 +31,7 @@ $pamiatky = [
     'img' => 'img/studna.jpeg',
     'opis' =>'Na trati Trenčianske Teplice – Trenčianske Teplá a späť, pravidelne premáva vláčik, ktorý bežne nazývame „električkou“. Je raritou medzi slovenskými železničnými traťami, pretože bola prvou verejne prevádzkovanou elektrifikovanou železničnou traťou na území Slovenska. Budova železničnej stanice v Trenčianskych Tepliciach bola postavená v roku 1941. Dodnes slúži pôvodnému účelu a je považovaná za kultúrnu pamiatku. Pôvodná železničná trať, na ktorej bola zahájená prevádzka 27. júla 1909, sa výstavbou stanice skrátila o 400 m.',
   ],
-  /*
-  * Mato
-  */
+
   (object)[
     'nazov'=> 'Trenčiansky hrad hradná studňa',
     'rokVzniku' => 1557,
@@ -81,16 +82,20 @@ $pamiatky = [
   * Juraj
   */
   (object)[
-    'nazov'=> 'Silo Metodova',
-    'rokVzniku' => 1930,
-    'sirka' => '48.156370',
-    'dlzka' => '17.126872',
+    'nazov'=> 'Červený most-fragment piliera',
+    'rokVzniku' => 1848,
+    'sirka' => '48.1728957',
+    'dlzka' => '17.074044400000048',
+    'img' => 'img/cerveny_most.jpg',
+    'opis' => 'Červený most leží na dvojkoľajnej elektrifikovanej trati č. 110 (Bratislava - Kúty), medzi žst. Bratislava hl.st. a žst. Devínska Nová Ves. Pred vojenskou nemocnicou prechádza ponad Cestu mládeže po Červenom moste železničná trať. Červený most bol pôvodne postavený z tehál, preto "červený". Prvý vlak prešiel cezeň z Viedne do Bratislavy 20. augusta 1848. Most potom slúžil svojmu účelu až do konca 2. svetovej vojny, keď ho pri panickom úteku z Bratislavy nemecké nacistické vojská vyhodili do vzduchu. Po vojne bol na jeho mieste vybudovaný nový železničný most z oceľových nosníkov, ktoré pre zachovanie mena mosta natreli načerveno.',
   ],
   (object)[
-    'nazov'=> 'KOSICE RANDOM DEBUG',
-    'rokVzniku' => 1957,
-    'sirka' => '48.715750',
-    'dlzka' => '21.260854',
+    'nazov'=> 'Tabaková továreň,Tabačka',
+    'rokVzniku' => 1850,
+    'sirka' => '48.7291548',
+    'dlzka' => '21.255894000000012',
+    'img' => 'img/tabacka.jpg',
+    'opis' => 'Vlastný areál má bohatú históriu, ktorá začala v dobe jeho budovania v polovici 19. storočia. Tabaková továreň bola zriadená ako štátny podnik, Košická uhorská kráľovská Tabaková továreň, v roku 1851 a svoju činnosť začala v budovách skonfiškovaných štátom a na pozemkoch dnešnej Strojárenskej ulice. V roku 1854 bola dokončená novostavba dvojpodlažnej budovy továrne v priestoroch siahajúcich až po dnešnú Garbiarsku ulicu. V nových priestoroch boli umiestnené nielen výrobne, ale aj vedľajšie prevádzky ako zámočnícka a stolárska dielňa, sklady, úradovne a pod. Od roku 1855 pribudol k manufaktúrnej výrobe parný stroj na rezanie fajkového tabaku. Koncom 19. storočia bola celková rozloha areálu továrne 6 840 m2 a pozostávala z 9 budov: administratívna budova, v strede a vzadu rezačky tabaku, zariadenie pre zavinovanie cigár, baliareň a expedícia. Ostatné budovy slúžili ako sušiarne a sklady tabaku a tabakových výrobkov. Košická továreň nevyrábala cigarety, ale cigary a fajkový tabak. V roku 1885 sa dosiahol vrchol výroby tabakovej továrne. Od tých čias sa rozsah výroby neustále znižoval jednak z dôvodu zriadenia tabakových tovární aj v iných blízkych mestách a jednak z dôvodu znižovania pracovných miest.V roku 1909 pribudol objekt pre administratívu, byty a sklad, orientovaný do Gorkého ulice, s dvorovým krídlom pre sklad. V zadnom dvore bol v roku 1933 dostavaný polozapustený objekt záchodov pre robotníkov. Pôvodná továrenská prevádzka bola zrušená v roku 1951. V rokoch 1951 - 53 väčšiu časť areálu rekonštruovali pre potreby odborného učilišťa. V súčasnosti vlastní celý areál Košický samosprávny kraj. Väčšinu týchto objektov využívalo do septembra 2007 Odborné učilište Aurela Stodolu ako dielne, učebne a kancelárie, časť bola prenajímaná ako ubytovňa. Uličný objekt slúži pre obchodné účely. Nárožný objekt do Strojárenskej a Gorkého ulice vlastní súkromná firma a využíva ho pre administratívne a obchodné účely. 1. septembra 2007 sa Odborné učilište Aurela Stodolu presťahovalo na novú adresu. Predmetné priestory sa tak uvoľnili pre nové aktivity. Areál bývalej Tabakovej továrne sa nachádza tesne za severnou hranicou Mestskej pamiatkovej rezervácie v Košiciach. Zaberá priestor, vymedzený z juhu Strojárenskou, z východu Gorkého a zo severu Garbiarskou ulicou. Na severovýchodnom nároží sa nachádza blok tehlových obytných domov, pôvodne postavených v 30. rokoch 20. storočia pre robotníkov a úradníkov Tabakovej továrne. Tie nie sú však súčasťou riešeného areálu. Tabaková továreň bola zriadená v roku 1851 ako štátny podnik, Košická uhorská kráľovská Tabaková továreň a svoju činnosť začala v budovách skonfiškovaných štátom a na pozemkoch dnešnej Strojárenskej ulice. Pôvodná továrenská prevádzka bola zrušená v roku 1951. V rokoch 1951-1953 väčšiu časť areálu rekonštruovali pre potreby odborného učilišťa. Na postupnej výstavbe a obnove sa podieľali významní košickí stavitelia: Jakab Peter, Lang Imre, Jakab Arpád a Géza, Ing. Hugo Kaboš a pod. Z hľadiska pamiatkovej ochrany treba zachovať autentické konštrukčné riešenia objektov, pôvodných krovov a detailov, rovnako ako pôvodný charakter zástavby. Na základe vyjadrenia krajského pamiatkového úradu je treba rešpektovať: Objekty, ktoré sa nachádzajú na Strojárenskej ulici č.3, sú evidované v Ústrednom zozname pamiatkového fondu SR ako technická pamiatka pod číslom 4596/1-3, pod názvom „Továreň s areálom“ – Tabaková továreň. (Zdroj: Štúdia Feasibility study a Cost & Benefit analýzy na Multifunkčný objekt v rámci areálu na Strojárenskej ulici č. 3 v Košiciach v rámci projektu MISTER)'
   ]
 ];
 
