@@ -23,17 +23,19 @@
 
 
     $(document).ready(function() {
-        $('#bbody').prepend($('<ul>', {
+        $('#body').prepend($('<ul>', {
             id: 'parallax'
         }));
         for (var i = 0; i < 20; i++) {
             var num = Math.floor(Math.random() * arrayImg.length);
             var img = arrayImg[num];
-            console.log(img);
-            $('#parallax').append($('<li> <img src="img/' + img + '" alt = "obrascok">', {
-                class: 'layer',
-                'data-depth': Math.random()
-            }));
+            //console.log(img);
+            // $('#parallax').append($('<li> <img src="img/' + img + '" alt = "obrascok">', {
+            //     class: 'layer',
+            //     'data-depth': Math.random()
+            // }));
+            $('#parallax').append($('<li>',{class:'layer','data-depth' : Math.random()}));
+
         }
         $('#parallax > li').each(function() {
              var size = (50 + (1 - $(this).data('depth')) * 250) + 'px'
