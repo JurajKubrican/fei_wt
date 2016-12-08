@@ -40,7 +40,7 @@ $menu = [
         'url' => 'pamiatky.html',
       ],
       (object)[
-        'text'=> 'Mapa/Casova OS',
+        'text'=> 'Časová OS',
         'url' => 'pamaiatky-os.html',
       ],
       (object)[

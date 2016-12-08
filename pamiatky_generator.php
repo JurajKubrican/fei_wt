@@ -81,12 +81,6 @@ $pamiatky = [
   * Juraj
   */
   (object)[
-    'nazov'=> 'pamiatka3',
-    'rokVzniku' => 1995,
-    'sirka' => '123',
-    'dlzka' => '456',
-  ],
-  (object)[
     'nazov'=> 'Silo Metodova',
     'rokVzniku' => 1930,
     'sirka' => '48.156370',
