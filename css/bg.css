@@ -7,9 +7,10 @@
   z-index:-1;
 }
 #parallax img{
-  width:250px;
+  width:400px;
+  border:1px solid black;
+  border-radius: 10px;
 }
 body{
-  background-color:rgba(0,0,0,0);
   overflow: hidden;
 }

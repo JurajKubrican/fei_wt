@@ -20,8 +20,8 @@
   function makeParallax(){
     $('#parallax > li').each(function(){
       var size = (50 + (1 - $(this).data('depth')) * 250)+'px'
-      $(this).css('margin-top',(Math.random() * 60 + 15)+'vh')
-      $(this).css('margin-left',(Math.random() * 60 + 15)+'vw')
+      $(this).css('margin-top',(Math.random() * 60 )+'vh')
+      $(this).css('margin-left',(Math.random() * 60 )+'vw')
     })
     $('#parallax').parallax();
     $('#parallax').show();
