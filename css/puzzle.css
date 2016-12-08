@@ -1,6 +1,27 @@
-#body {
+body {
   width: 68%;
   margin: 0 auto;
+}
+
+footer
+{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #3088A6;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    padding-top: 20px;
+}
+
+#counter {
+  color: white;
+}
+
+footer p
+{
+    color: white;
 }
 
 #divMapa
@@ -104,7 +125,7 @@
 #divBA
 {
     top: 151px;
-    left: 37px;
+    left: 31px;
 
     width: 72px;
     height: 96px;
@@ -113,7 +134,7 @@
 #divTT
 {
     top: 111px;
-    left: 39px;
+    left: 33px;
 
     width: 120px;
     height: 180px;
@@ -122,7 +143,7 @@
 #divNR
 {
     top: 139px;
-    left: 114px;
+    left: 108px;
 
     width: 150px;
     height: 150px;
@@ -131,7 +152,7 @@
 #divTN
 {
     top: 49px;
-    left: 82px;
+    left: 77px;
 
     width: 156px;
     height: 132px;
@@ -139,8 +160,8 @@
 
 #divBB
 {
-    top: 105px;
-    left: 188px;
+    top: 104px;
+    left: 182px;
 
     width: 210px;
     height: 138px;
@@ -149,7 +170,7 @@
 #divZA
 {
     top: 8px;
-    left: 184px;
+    left: 178px;
 
     width: 168px;
     height: 138px;
@@ -158,7 +179,7 @@
 #divPO
 {
     top: 32px;
-    left: 326px;
+    left: 320px;
 
     width: 270px;
     height: 108px;
@@ -167,7 +188,7 @@
 #divKE
 {
     top: 97px;
-    left: 357px;
+    left: 351px;
 
     width: 222px;
     height: 102px;
