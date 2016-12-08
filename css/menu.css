@@ -133,12 +133,10 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
-<<<<<<< HEAD
+
 /*
 * FOOTER
 */
-=======
->>>>>>> refs/remotes/origin/master
 #footer{
     width: 100%;
     height: 60px;
@@ -157,7 +155,6 @@
 }
 
 #meniny_nav{
-<<<<<<< HEAD
   float:right;
   color:#cdd1d2;
   margin-right: 15px;
@@ -165,7 +162,4 @@
 }
 .navbar-brand{
   font-size:30px;
-=======
-	float:right;
->>>>>>> refs/remotes/origin/master
 }
