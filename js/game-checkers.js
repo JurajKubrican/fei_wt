@@ -185,7 +185,7 @@ var Checkers = (function($,swal){
     initBoard: function(boardEl){
       buildBoard(boardEl);
       hookDraggable(boardEl);
-      makeResponsive(boardEl)
+      //makeResponsive(boardEl)
     }
 }
 
