@@ -57,6 +57,7 @@
   float:left;
   margin:10px;
   color:#cdd1d2;
+  font-size:0.8em;
 }
 #breadcrumbs a {
   color:#cdd1d2;
@@ -156,4 +157,8 @@
   float:right;
   color:#cdd1d2;
   margin-right: 15px;
+  font-size:0.8em;
+}
+.navbar-brand{
+  font-size:30px;
 }

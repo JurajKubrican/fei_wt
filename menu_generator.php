@@ -1,10 +1,10 @@
 <?php
 
 $menu = [
-  (object)[
-    'text'=> 'Domov',
-    'url' => 'index.html',
-  ],
+  // (object)[
+  //   'text'=> 'Domov',
+  //   'url' => 'index.html',
+  // ],
   (object)[
     'text'=> 'Hry',
     'url' => 'games.html',
