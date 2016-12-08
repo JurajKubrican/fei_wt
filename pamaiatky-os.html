@@ -14,9 +14,10 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/pamiatky-os.js"></script>
     <script src="js/menu.js"></script>
+	<script type="text/javascript" src="js/meniny_nav.js"></script>
 </head>
 
-<body>
+<body onload="meniny_onload()">
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -31,6 +32,7 @@
       <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
       </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
+		<div id="meniny_nav"></div>
   </nav>
   <div class="container">
     <div id="map-wrapper">
