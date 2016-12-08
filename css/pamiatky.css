@@ -10,6 +10,11 @@
 
   font-weight: bold;
 }
+img{
+  margin: 5px;
+  width: 200px;
+  float: left;
+}
 
 .wrapper > * {
   padding: 10px;
