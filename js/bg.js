@@ -27,6 +27,6 @@
     })
     $('#parallax').parallax();
     $('#parallax').show();
-
+    $('body:eq(0)').remove();
   })
 }(jQuery))

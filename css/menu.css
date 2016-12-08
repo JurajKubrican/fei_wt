@@ -46,6 +46,7 @@
     border-radius: 6px 0 6px 6px;
 }
 
+
 #footer{
     width: 100%;
     height: 60px;
@@ -59,4 +60,7 @@
 
 #counter {
   color: white;
+
+#meniny_nav{
+	float:right;
 }

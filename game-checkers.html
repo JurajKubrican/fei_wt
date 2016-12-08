@@ -26,12 +26,14 @@
 <!--GAME STUFF-->
     <link rel="stylesheet" href="css/game-checkers.css">
     <script src="js/game-checkers.js"></script>
+<!--meniny-->
+	<script type="text/javascript" src="js/meniny_nav.js"></script>
 
 
 
 </head>
 
-<body>
+<body onload="meniny_onload()">
   <div class="container">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -47,6 +49,7 @@
         <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
+	  <div id="meniny_nav"></div>
     </nav>
     <div class="jumbotron text-center">
       <div id="checkers"></div>

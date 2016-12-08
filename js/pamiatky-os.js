@@ -13,7 +13,7 @@ var dataJSON;
   function loadPamiatky(url){
     $.get(url,function(data){
       dataJSON = data;
-      $('#timeline-wrapper').html(showPamiatky(data));
+      $('#timeline-wrapper').html(showPamiatky(typeof(data) === 'string' ? JSON.parse(data):data));
       tooltipsterize();
     });
   }

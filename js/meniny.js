@@ -79,8 +79,10 @@ function datum_meno(day,month,objekt,vall){
 
 					if(dat[i].childNodes[0].nodeValue === datum){
 						pom++;
-						if(val === 0)
+						if(val === 0){
 						obj.innerHTML = "Dátum: " + den+"."+ mesiac + ", Meniny: "+meno[(i-posun)].childNodes[0].nodeValue;
+						//document.getElementById("meniny_nav").innerHTML="Dátum: " + den+"."+ mesiac + ", Meniny: "+meno[(i-posun)].childNodes[0].nodeValue;
+						}
 						else obj.value =meno[(i-posun)].childNodes[0].nodeValue;
 					}
 				}

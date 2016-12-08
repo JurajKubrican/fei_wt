@@ -59,6 +59,25 @@ $pamiatky = [
     'opis' => 'Mlyn reprezentuje typ tzv. Pobrežného kolového mlyna. Postavený je na pilótach z agátového dreva v toku rieky na ostrohe, vytvorenej Malým Dunajom a jeho ľavobrežným prítokom Suchým potokom. Budova mlyna rámovej konštrukcie s doštenou výplňou je z brehu prístupná drevenou lávkou so zábradlím. Veľké lopatkové dvojvencové hnacie koleso na spodnú vodu je v prúde rieky upevnené na podpornej stolici s doštenou plošinou. Dominantným objektom mlyna je drevená mlynica na pilótoch, so sedlovou strechou krovovej hambálkovej konštrukcie, krytá šindľom. Zaujímavosťou je štrbinové okienko, ktorým mlynár pozoroval chod náhonového kolesa, ako aj príchod gazdov s melivom z druhého brehu rieky. Dvojvencové lopatkové koleso s drevenými ramenami má priemer 7 m, široké je 2,5m. Pobrežný kolový mlyn v Tomášikove postavil v r. 1893 mlynár Ján Matica, starý otec posledného majiteľa rovnakého mena (narodený r. 1920). Mlyn sa zachoval v pôvodnom stave, bez rušivých zásahov do konštrukcie, s uceleným prevádzkyschopným mlynským zariadením. V mlyne sa mlelo až do r. 1960. V r. 1982 bol mlyn obnovený a zariadený ako expozícia Vlastivedného múzea v Galante.',
   ],
   /*
+  * Alena
+  */
+  (object)[
+    'nazov'=> 'Mestská Hvezdáreň Prešov',
+    'rokVzniku' => 1935,
+    'sirka' => '48.9997735',
+    'dlzka' => '21.2565977',
+    'img' => 'img/hvezdaren_a_planetarium_presov.jpg',
+    'opis' => 'Korene astronómie v Prešove siahajú až do 16. storočia. V historických záznamoch mesta existuje zmienka o prešovskom hvezdárovi Jánovi z Prešova a z r. 1661 prvý doklad o mestskej hvezdárni v Prešove, ktorá sa nachádzala na rohu Švermovej a Požiarnickej ulice (oproti Floriánovej bráne). V 18. storočí bola zriadená hvezdárska pozorovateľňa pri Kolégiu. V r. 1932 vznikla v Prešove súkromná hvezdáreň Dr. A. Duchoňa na terajšej Hlavnej ulici č. 32. V r. 1948 bola v budove vodárenskej veže otvorená prvá ľudová hvezdáreň na Slovensku a v r. 1984 bolo pri hvezdárni otvorené planetárium.',
+  ],
+  (object)[
+    'nazov'=> 'Ludwigov Mlyn',
+    'rokVzniku' => 1934,
+    'sirka' => '48.156069',
+    'dlzka' => '17.126590',
+    'img' => 'img/ludwigov_mlyn.jpg',
+    'opis' => 'Dnešné silo bývalého Ludwigovho mlynu bolo postavené v rokoch 1934 až 1937. V druhej polovici 19. storočia bolo toto územie známe vzácnou synergiou chovu ošípaných a výrobou mlynárskych produktov. Odpad z výroby menších mlynov, ktorých tu bolo hneď niekoľko, sa využil na výkrm ošípaných. Chov ošípaných aj mlyn možno pripísať rodine Ludwigovcov. V roku 1880 vybudovali Ludwigovci parný mlyn – najväčší v meste. Ako prvý mal v roku 1884 v Prešporku trvalé elektrické osvetlenie. Energiu preň mu vyrobilo vlastné dynamo. Pán Gottfried Ludwig, ktorého meno mlyn nesie, prišiel do Prešporku z českého kráľovstva. Syn Gottfrieda Ludwiga, Johann, po roku 1863 firmu rozšíril a stal sa aj mestským poslancom. Založil nadáciu na podporu priemyslu a finančne podporil aj založenie vyššej obchodnej školy v meste.',
+  ],
+  /*
   * Juraj
   */
   (object)[
