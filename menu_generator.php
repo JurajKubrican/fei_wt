@@ -43,6 +43,10 @@ $menu = [
         'text'=> 'Mapa/Casova OS',
         'url' => 'pamaiatky-os.html',
       ],
+      (object)[
+        'text'=> 'Google Mapa',
+        'url' => 'pamaiatky-gmapa.html',
+      ],
     ],
   ],
   (object)[
