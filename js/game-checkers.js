@@ -8,7 +8,7 @@ var Checkers = (function(Checkers,$){
 
     root = $(boardEl);
     root.append($('<textarea>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
-    root.append($('<button>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
+    //root.append($('<button>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
 
     var board =[
     [-1,-1,-1,  1, 1, 1,  -1,-1,-1],
