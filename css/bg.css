@@ -6,8 +6,8 @@
   height:100%;
   z-index:-1;
 }
-#parallax > li{
-  border-radius: 50%;
+#parallax img{
+  width:250px;
 }
 body{
   background-color:rgba(0,0,0,0);
