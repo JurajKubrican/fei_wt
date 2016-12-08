@@ -37,13 +37,13 @@
             $('#parallax').append($('<li>',{class:'layer','data-depth' : Math.random()}));
 
         }
-        $('#parallax > li').each(function() {
-             var size = (50 + (1 - $(this).data('depth')) * 250) + 'px'
-             $(this).css('background-color', colors[Math.floor($(this).data('depth') * 8)])
-             $(this).css('width', size)
-            $(this).css('height', size)
-            $(this).css('margin-top', (Math.random() * 50 - 5) + 'vh')
-            $(this).css('margin-left', (Math.random() * 50 - 5) + 'vw')
+        $('#parallax > li').each(function(){
+          var size = (50 + (1 - $(this).data('depth')) * 250)+'px'
+          $(this).css('background-color',colors[Math.floor($(this).data('depth') * 8)])
+          $(this).css('width',size)
+          $(this).css('height',size)
+          $(this).css('margin-top',(Math.random() * 100 - 5)+'vh')
+          $(this).css('margin-left',(Math.random() * 100 - 5)+'vw')
         })
         $('#parallax').parallax();
         $('#parallax').show();

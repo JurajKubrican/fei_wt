@@ -90,10 +90,10 @@ var dataJSON;
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
-            lat: 48.876804,
-            lng: 19.629142
+            lat: 48.4350,
+            lng: 19.2726
         },
-        zoom: 8
+        zoom: 7
     });
     infowindow = new google.maps.InfoWindow();
 
