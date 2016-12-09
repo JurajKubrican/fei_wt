@@ -22,7 +22,7 @@ function vypis(){
 	var lng = (localStorage.length/2);
 	for(var i = 0;i<lng;i++){
 		var uloha = localStorage.getItem('u'+i);
-	$("#ulohy").append('<input id="'+i+'" type="checkbox" value="uloha" onclick="check_p('+i+')"> '+uloha+'<br>');
+	$("#ulohy").append('<span onclick="check_p('+i+')"><input id="'+i+'" type="checkbox" value="uloha" onclick="check_p('+i+')"> '+uloha+'</span><br>');
 		
 	}
 	
@@ -30,9 +30,9 @@ function vypis(){
 }
 
 function check_p(cislo){
-	if(document.getElementById(cislo).checked)
+	//if(document.getElementById(cislo).checked)
 		document.getElementById("podrobnosti").innerHTML="<b>Názov:</b> "+localStorage.getItem('u'+cislo)+"<br><b>Podrobnosti:</b><br>"+localStorage.getItem('p'+cislo);
-	else document.getElementById("podrobnosti").innerHTML="";
+	//else document.getElementById("podrobnosti").innerHTML="";
 	
 }
 

@@ -218,6 +218,15 @@ background-color: silver;
 	
 	
 }
+#nazov_prip{
+	width:70%;
+	
+}
+#podr_prip{
+	width:70%;
+	height:60%;
+	
+}
 #podrobnosti{
 	position:relative;
 	width:70%;
@@ -225,7 +234,7 @@ background-color: silver;
 	background-color:white;
 	text-align:left;
 	vertical-align:center;
-	height:200px;
+	height:70%;
 
 }
 #vymaz_button{
