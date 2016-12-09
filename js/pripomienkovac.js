@@ -30,9 +30,11 @@ function vypis(){
 }
 
 function check_p(cislo){
-	//if(document.getElementById(cislo).checked)
-		document.getElementById("podrobnosti").innerHTML="<b>Názov:</b> "+localStorage.getItem('u'+cislo)+"<br><b>Podrobnosti:</b><br>"+localStorage.getItem('p'+cislo);
-	//else document.getElementById("podrobnosti").innerHTML="";
+	var divko = document.getElementById("podrobnosti");
+		if(divko.innerHTML ===  "<b>Názov:</b> "+localStorage.getItem('u'+cislo)+"<br><b>Podrobnosti:</b><br>"+localStorage.getItem('p'+cislo))
+			divko.innerHTML="";
+		else divko.innerHTML="<b>Názov:</b> "+localStorage.getItem('u'+cislo)+"<br><b>Podrobnosti:</b><br>"+localStorage.getItem('p'+cislo);
+	
 	
 }
 
