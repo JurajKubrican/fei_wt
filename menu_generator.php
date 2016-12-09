@@ -50,7 +50,7 @@ $menu = [
     ],
   ],
   (object)[
-    'text'=> 'Pripomienkovac',
+    'text'=> 'Pripomienkovač',
     'url' => 'pripomienkovac.html',
   ],
   (object)[
