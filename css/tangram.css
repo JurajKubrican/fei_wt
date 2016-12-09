@@ -96,7 +96,7 @@
 #canvas {
   position: absolute;
   left: 150px;
-  top: 150px;
+  top: 175px;
 	height: 500px;
 	width: 500px;
   background-color: black;
@@ -106,7 +106,7 @@
 #instructions {
   position: absolute;
   width: 500px;
-  top: 60px;
+  top: 90px;
   left: 150px;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;

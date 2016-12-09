@@ -11,12 +11,12 @@
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/bg.css">
+
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/jquery.parallax.js"></script>
+
     <script src="js/counter.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/bg.js"></script>
+
 
     <script src="js/vendor/tooltipster.bundle.min.js"></script>
     <link rel="stylesheet" href="css/tooltipster.bundle.min.css">
@@ -36,54 +36,43 @@
 </head>
 
 <body onload="spustenie();meniny_onload()">
-    <div class="container">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false" aria-controls="main_navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-
-        </button>
-                    <a class="navbar-brand" href="#">Project name</a>
-
-                </div>
-                <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a id="breadcrumbs"></a>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
-
-            </div>
-            <!--/.container-fluid -->
-            <div id="meniny_nav"></div>
-        </nav>
-
-
-
-        <div class="jumbotron text-center">
-            <h1>Meniny</h1>
-            <h4 id="meniny"> </h4>
-
-            <p>
-                <span id="tooltip10">Dátum:</span>
-                <br>
-
-                <input type="text" id="datum" onchange="z_datum()" placeholder="DD.MM">
-                <br>
-
-                <label>Meno:</label>
-                <br>
-                <input type="text" name="meno" id="meno" oninput="z_mena()" placeholder="Meno">
-
-            </p>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="main_navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
         </div>
-    </div>
+        <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        </div>
+      </div>
+      <div id="breadcrumbs"></div>
+      <div id="meniny_nav"></div>
+    </nav>
+
+
+
+      <div class="jumbotron text-center">
+          <h1>Meniny</h1>
+          <h4 id="meniny"> </h4>
+
+          <p>
+              <span id="tooltip10">Dátum:</span>
+              <br>
+
+              <input type="text" id="datum" onchange="z_datum()" placeholder="DD.MM">
+              <br>
+
+              <label>Meno:</label>
+              <br>
+              <input type="text" name="meno" id="meno" oninput="z_mena()" placeholder="Meno">
+
+          </p>
+      </div>
     <footer id="footer">
         <div id="counter"></div>
     </footer>

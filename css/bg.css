@@ -6,10 +6,13 @@
   height:100%;
   z-index:-1;
 }
-#parallax > li{
-  border-radius: 50%;
+#parallax img{
+  width:400px;
+  border:1px solid black;
+  border-radius: 10px;
 }
 body{
-  background-color:rgba(0,0,0,0);
-  overflow-x: hidden;
+  overflow: hidden;
+  height:100vh;
+  width:100vw;
 }

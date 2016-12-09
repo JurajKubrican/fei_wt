@@ -1,10 +1,10 @@
 <?php
 
 $menu = [
-  (object)[
-    'text'=> 'Domov',
-    'url' => 'index.html',
-  ],
+  // (object)[
+  //   'text'=> 'Domov',
+  //   'url' => 'index.html',
+  // ],
   (object)[
     'text'=> 'Hry',
     'url' => 'games.html',
@@ -40,7 +40,7 @@ $menu = [
         'url' => 'pamiatky.html',
       ],
       (object)[
-        'text'=> 'Mapa/Casova OS',
+        'text'=> 'Časová OS',
         'url' => 'pamaiatky-os.html',
       ],
       (object)[

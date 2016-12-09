@@ -2,24 +2,18 @@
 <html lang="sk">
 
 <head>
-    <title>Projekt</title>
+    <title>Chinese Checkers</title>
     <meta charset="utf-8">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <script src="js/vendor/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/counter.js"></script>
 <!--menu STUFF -->
     <link rel="stylesheet" href="css/menu.css">
     <script src="js/menu.js"></script>
 
-<!--BG STUFF -->
-    <link rel="stylesheet" href="css/bg.css">
-    <script src="js/vendor/jquery.parallax.js"></script>
-    <script src="js/bg.js"></script>
-
-    <!-- SWEET ALERT-->
+<!-- SWEET ALERT-->
     <script src="js/vendor/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 
@@ -28,13 +22,13 @@
     <script src="js/game-checkers.js"></script>
 <!--meniny-->
 	<script type="text/javascript" src="js/meniny_nav.js"></script>
+  <script type="text/javascript" src="js/counter.js"></script>
 
 
 
 </head>
 
 <body onload="meniny_onload()">
-  <div class="container">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -44,22 +38,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
         </div>
         <div id="main_navbar" role="navigation" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a id="breadcrumbs"></a>
-                </li>
-            </ul>
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
+      <div id="breadcrumbs"></div>
 	  <div id="meniny_nav"></div>
     </nav>
-    <div class="jumbotron text-center">
       <div id="checkers"></div>
-    </div>
-  </div>
+
   <footer id="footer">
     <div id="counter"></div>
   </footer>
