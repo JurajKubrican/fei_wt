@@ -103,16 +103,22 @@
   z-index: -5;
 }
 
-#instructions {
-  position: absolute;
-  width: 500px;
+.instructions {
+  float: right;
+  width: 350px;
   top: 90px;
-  left: 150px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #3088A6;
   color: white;
   font-weight: bold;
   padding: 7px;
   padding-left: 20px;
+  padding-top: 15px;
+}
+#progress{
+  position: absolute;
+  top: 250px;
+  right: 0;
+
 }
 
 #modal{
@@ -144,6 +150,14 @@
   padding: 20px;
   color: white;
   text-decoration: underline;
+}
+
+#nadpis{
+  font-size: 32px;
+  position: absolute;
+  left: 150px;
+  z-index: -500;
+  color: #3088a6;
 }
 
 
