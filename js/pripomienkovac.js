@@ -2,10 +2,16 @@ function pridaj_ulohu(){
 	var lng = (localStorage.length/2);
 	var nmb = 0;
 	nmb = lng;
-	var nazov_ul = prompt('Zadajte nazov ulohy','');
-	var popis_ul = prompt('Zadajte popis ulohy','');
+	//var nazov_ul = prompt('Zadajte nazov ulohy','');
+	//var popis_ul = prompt('Zadajte popis ulohy','');
+	var nazov_ul = document.getElementById("nazov_prip").value;
+	var popis_ul = document.getElementById("podr_prip").value;
+	
 	localStorage.setItem('u'+nmb,nazov_ul);
 	localStorage.setItem('p'+nmb,popis_ul);
+	
+	document.getElementById("nazov_prip").value="";
+	document.getElementById("podr_prip").value="";
 	
 	vypis();
 }
@@ -16,7 +22,7 @@ function vypis(){
 	var lng = (localStorage.length/2);
 	for(var i = 0;i<lng;i++){
 		var uloha = localStorage.getItem('u'+i);
-	$("#ulohy").append('<input id="'+i+'" type="checkbox" value="uloha" onchange="check_p('+i+')"> '+uloha+'<br>');
+	$("#ulohy").append('<input id="'+i+'" type="checkbox" value="uloha" onclick="check_p('+i+')"> '+uloha+'<br>');
 		
 	}
 	
@@ -25,7 +31,7 @@ function vypis(){
 
 function check_p(cislo){
 	if(document.getElementById(cislo).checked)
-		document.getElementById("podrobnosti").innerHTML=localStorage.getItem('p'+cislo);
+		document.getElementById("podrobnosti").innerHTML="<b>Názov:</b> "+localStorage.getItem('u'+cislo)+"<br><b>Podrobnosti:</b><br>"+localStorage.getItem('p'+cislo);
 	else document.getElementById("podrobnosti").innerHTML="";
 	
 }
