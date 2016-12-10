@@ -15,6 +15,9 @@
   $(document).ready(function(){
     $('body>.container').prepend($('<ul>',{id:'parallax'}));
     loadPamiatky('js/pamiatky.json');
+    document.querySelector('video').addEventListener('loadedmetadata', function() {
+      this.currentTime = 16;
+    }, false);
   })
 
   function makeParallax(){
