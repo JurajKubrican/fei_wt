@@ -155,7 +155,9 @@
 #record{
   font-size: 15px;
 }
-
+.record{
+  font-size: 15px;
+}
 
 body{
   margin: 0;
