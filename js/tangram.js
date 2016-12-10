@@ -16,12 +16,16 @@ $(document).ready(function() {
         });
 
         function handleDrop(e,ui){
-          if (totalSeconds == 0) interval = setInterval(setTime, 1000);
+            if (totalSeconds == 0) interval = setInterval(setTime, 1000);
           var sol=[checkSolution1(),checkSolution2(),checkSolution3(),checkSolution4()];
           for (var i = 0; i < 4; i++) {
             if (sol[i] === true){
               document.getElementById('minutes_new').innerHTML = pad(parseInt(totalSeconds/60));
               document.getElementById('seconds_new').innerHTML = pad(totalSeconds%60);
+              var record = getScoreLoF (totalSeconds,'tangram');
+              document.getElementById('minutes_old').innerHTML = pad(parseInt(record/60));
+              document.getElementById('seconds_old').innerHTML = pad(record%60);
+
               $('#modal').show();
               clearInterval(interval);
             }
