@@ -28,7 +28,7 @@ $pamiatky = [
     'rokVzniku' => 1940,
     'sirka' => '48.9097626',
     'dlzka' => '18.171751500000028',
-    'img' => 'img/studna.jpeg',
+    'img' => 'img/stanica.jpg',
     'opis' =>'Na trati Trenčianske Teplice – Trenčianske Teplá a späť, pravidelne premáva vláčik, ktorý bežne nazývame „električkou“. Je raritou medzi slovenskými železničnými traťami, pretože bola prvou verejne prevádzkovanou elektrifikovanou železničnou traťou na území Slovenska. Budova železničnej stanice v Trenčianskych Tepliciach bola postavená v roku 1941. Dodnes slúži pôvodnému účelu a je považovaná za kultúrnu pamiatku. Pôvodná železničná trať, na ktorej bola zahájená prevádzka 27. júla 1909, sa výstavbou stanice skrátila o 400 m.',
   ],
 
