@@ -37,7 +37,7 @@ function breadcrumbs() {
     }else{
       crumb = JSON.parse(crumb)
     }
-    if(newCrumb.title !== crumb[crumb.length - 1].title)
+    if( typeof(crumb[crumb.length - 1]) === 'undefined' || newCrumb.title !== crumb[crumb.length - 1].title)
     crumb.push(newCrumb);
 
     if(crumb.length > 5){
@@ -46,7 +46,7 @@ function breadcrumbs() {
 
     setCookie("breadcrumbs", JSON.stringify(crumb), 600000);
 
-    for(i = 0;i<5;i++){
+    for(i = 0;i<Math.min(5,crumb.length);i++){
       if (i<4){
           $('#breadcrumbs').append($('<a>',{html:crumb[i].title,href:crumb[i].url}) ).append(" >> ");
       }else {
