@@ -1,12 +1,12 @@
 function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(document.getElementById('mapka'), {
         center: {
             lat: 48.4350,
             lng: 19.2726
         },
         zoom: 7
     });
-    infowindow = new google.maps.InfoWindow();
+    var infowindow = new google.maps.InfoWindow();
 
     $.get('js/pamiatky.json', function(data) {
         for (i in data) {

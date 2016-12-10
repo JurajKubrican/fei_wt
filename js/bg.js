@@ -31,7 +31,7 @@
 
   function loadPamiatky(url){
     $.get(url,function(data){
-      dataJSON = data;
+      data = typeof(data) === 'string' ? JSON.parse(data):data ;
       for(var i in data){
         var img = $('<img>',{src:data[i].img,alt:data[i].meno});
         var li = $('<li>',{class:'layer','data-depth' : Math.random()});
