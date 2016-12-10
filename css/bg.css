@@ -7,7 +7,9 @@
   z-index:-1;
 }
 #parallax img{
-  width:200px;
+  width:300px;
+  border-radius: 15px;
+  opacity: 0.8;
 }
 body{
   overflow: hidden;
@@ -23,36 +25,42 @@ video{
 
 
 #parallax > li:nth-child(1){
-  margin:50vh 0 0 20vw;
+  margin:30vh 0 0 0vw;
 }
 #parallax > li:nth-child(2){
-  margin:50vh 0 0 40vw;
+  margin:67vh 0 0 75vw;
 }
 #parallax > li:nth-child(3){
-  margin:50vh 0 0 60vw;
+  margin:10vh 0 0 27vw;
 }
+
 #parallax > li:nth-child(4){
-  margin:20vh 0 0 20vw;
+  margin:40vh 0 0 27vw;
 }
 #parallax > li:nth-child(5){
-  margin:20vh 0 0 40vw;
+  margin:73vh 0 0 27vw;
 }
 #parallax > li:nth-child(6){
-  margin:20vh 0 0 60vw;
+  margin:20vh 0 0 51vw;
 }
+
 #parallax > li:nth-child(7){
-  margin:70vh 0 0 20vw;
+  margin:52vh 0 0 51vw;
 }
 #parallax > li:nth-child(8){
-  margin:70vh 0 0 40vw;
+  margin:55vh 0 0 3vw;
 }
 #parallax > li:nth-child(9){
-  margin:70vh 0 0 60vw;
+  margin:10vh 0 0 75vw;
 }
+
 #parallax > li:nth-child(10){
-  margin:50vh 0 0 20vw;
+  margin:40vh 0 0 75vw;
 }
 
 #parallax h1{
   font-size:1em;
+  z-index: 500;
+  color: white;
+  text-shadow: 2px 2px black;
 }

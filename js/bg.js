@@ -35,8 +35,8 @@
       data = typeof(data) === 'string' ? JSON.parse(data):data ;
       for(var i in data){
         var li = $('<li>',{class:'layer','data-depth' : Math.random()});
-        li.append($('<img>',{src:data[i].img,alt:data[i].nazov}));
         li.append($('<h1>' + data[i].nazov + '</h1>'));
+        li.append($('<img>',{src:data[i].img,alt:data[i].nazov}));
         $('#parallax').append(li);
       }
       makeParallax();
