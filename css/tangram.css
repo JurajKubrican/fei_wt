@@ -40,7 +40,7 @@
     border-style: solid;
     border-width: 250px 250px 0 250px;
     border-color: rgba(0,0,0,0.7) transparent transparent transparent;
-    top: 700px;
+    top: 675px;
     left: 150px;
     z-index: 1;
 }
@@ -50,8 +50,9 @@
     border-style: solid;
     border-width: 125px 125px 125px 125px;
     border-color: transparent transparent rgba(0,0,0,0.9) transparent;
-    top: 700px;
-    left: 150px;
+    top: 175px;
+    left: 700px;
+    z-index: 5;
 }
 
 #triangle4 {
@@ -65,15 +66,6 @@
     z-index: 4;
 }
 
-#triangle5 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 125px 125px 125px 0;
-    border-color: transparent rgba(0,0,0,0.7) transparent transparent;
-    top: -500px;
-}
-
 #parallelogram {
 	width: 250px;
 	height: 125px;
@@ -81,9 +73,9 @@
 	   -moz-transform: skew(-45deg);
 	     -o-transform: skew(-45deg);
 	background: rgba(0,0,0,0.8);
-    top: 700px;
-    left: 575px;
-    z-index: 5;
+    top: 725px;
+    left: 450px;
+    z-index: 6;
 }
 
 #blockTray {
