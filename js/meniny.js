@@ -80,7 +80,7 @@ function datum_meno(day,month,objekt,vall){
 					if(dat[i].childNodes[0].nodeValue === datum){
 						pom++;
 						if(val === 0){
-						obj.innerHTML = "Dátum: " + den+"."+ mesiac + ", Meniny: "+meno[(i-posun)].childNodes[0].nodeValue;
+						obj.innerHTML = "Dátum: " + den+"."+ mesiac + "., Meniny: "+meno[(i-posun)].childNodes[0].nodeValue;
 						//document.getElementById("meniny_nav").innerHTML="Dátum: " + den+"."+ mesiac + ", Meniny: "+meno[(i-posun)].childNodes[0].nodeValue;
 						}
 						else obj.value =meno[(i-posun)].childNodes[0].nodeValue;
@@ -151,7 +151,7 @@ function z_mena(){
 function z_datum(){
 	$("#myTooltip1").hide();
 	$('#tooltip10').tooltipster('close');
-	var letters = /^[0-9]{1,2}\.[0-9]{1,2}$/;
+	var letters = /^[0-9]{1,2}\.[0-9]{1,2}\.$/;
 	var inp = document.getElementById("datum");
 	if(inp.value.match(letters)){
 	var den;

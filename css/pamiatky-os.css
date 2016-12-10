@@ -38,3 +38,19 @@
   width:100%;
   height:100%;
 }
+
+#mapka {
+  width:100%;
+  min-height: 600px;
+  height: 100%;
+  position:relative;
+}
+
+.container {
+  min-height: 100%;
+  height: 100%;
+}
+
+.map_img {
+  float: right;
+}

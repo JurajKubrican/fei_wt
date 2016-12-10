@@ -49,12 +49,12 @@
     <div id="breadcrumbs"></div>
     <div id="meniny_nav"></div>
   </nav>
-
+<div id="counter"></div>
 
   <div class="jumbotron text-center">
 
       <h1>Pripomienkovač</h1>
-      <div id="div_prip">
+	  <div id="div_prip">
           <div id="hlavny1">
 
               <h3>Výpis úloh</h3>
@@ -63,24 +63,26 @@
 
               </div>
 
-              <input type="button" id="prip_button" onclick="pridaj_ulohu()" value="Pridaj Ulohu">
+              <input type="button" id="vymaz_button" onclick="vymaz_p()" value="Vymaž úlohu">
           </div>
           <div id="hlavny2">
-
-
               <h3>Podrobnosti k úlohe:</h3>
               <div id="podrobnosti"></div>
 
               <br>
-              <input type="button" id="vymaz_button" onclick="vymaz_p()" value="Vymaž úlohu">
+
 
           </div>
-          <br>
-      </div>
+			<div id="hlavny3">
+			<h3>Pridanie úlohy</h3>
+			<input type="text"   id="nazov_prip" placeholder="Názov">
+			<textarea  id="podr_prip" placeholder="Popis"></textarea><br>
+			<input type="button" id="prip_button" onclick="pridaj_ulohu()" value="Pridaj Ulohu">
+		  </div>
+
+          
+     </div>
   </div>
-  <footer id="footer">
-      <div id="counter"></div>
-  </footer>
 
 </body>
 

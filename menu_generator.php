@@ -6,6 +6,30 @@ $menu = [
   //   'url' => 'index.html',
   // ],
   (object)[
+    'text'=> 'Pamiatky',
+    'url' => 'pamiatky.html',
+    'items' =>[
+      (object)[
+        'text'=> 'Mapy',
+        'url' => 'pamiatky.html',
+        'items' =>[
+          (object)[
+            'text'=> 'Časová OS',
+            'url' => 'pamaiatky-os.html',
+          ],
+          (object)[
+            'text'=> 'Google Mapa',
+            'url' => 'pamaiatky-gmapa.html',
+          ],
+        ],
+      ],
+      (object)[
+        'text'=> 'Zoznam',
+        'url' => 'pamiatky.html',
+      ],
+    ],
+  ],
+  (object)[
     'text'=> 'Hry',
     'url' => 'games.html',
     'items' =>[
@@ -32,25 +56,8 @@ $menu = [
     ],
   ],
   (object)[
-    'text'=> 'Pamiatky',
-    'url' => 'pamiatky.html',
-    'items' =>[
-      (object)[
-        'text'=> 'Zoznam',
-        'url' => 'pamiatky.html',
-      ],
-      (object)[
-        'text'=> 'Časová OS',
-        'url' => 'pamaiatky-os.html',
-      ],
-      (object)[
-        'text'=> 'Google Mapa',
-        'url' => 'pamaiatky-gmapa.html',
-      ],
-    ],
-  ],
-  (object)[
-    'text'=> 'Pripomienkovac',
+
+    'text'=> 'Pripomienkovač',
     'url' => 'pripomienkovac.html',
   ],
   (object)[

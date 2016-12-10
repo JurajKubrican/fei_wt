@@ -37,6 +37,7 @@ function breadcrumbs() {
     }else{
       crumb = JSON.parse(crumb)
     }
+    if(newCrumb.title !== crumb[crumb.length - 1].title)
     crumb.push(newCrumb);
 
     if(crumb.length > 5){

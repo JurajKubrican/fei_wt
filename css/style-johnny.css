@@ -176,39 +176,65 @@ background-color: silver;
 
 
 #hlavny1{
-	position:relative;
-	width:33%;
+	position:absolute;
+	width:20%;
 
 	background-color:#D3D3D3;
-	float:left;
-	left:15%;
-	border-radius:30px;
 	
+	left:10%;
+	border-radius:30px;
+
+
 }
 
 #div_prip{
-	float:top;
-	height:300px;
+
+	height:400px;
 }
 
 #hlavny2{
 	border-radius:30px;
-	position:relative;
-	width:33%;
+	position:absolute;
+	width:20%;
 	height:320px;
+	
 	background-color:#D3D3D3;
-	float:right;
-	right:15%;
+	left:40%;
+	
+}
+
+
+#hlavny3{
+	position:absolute;
+	width:20%;
+	background-color:#D3D3D3;
+	height:320px;
+	border-radius:30px;
+	left:70%;
+
+
+
+
+	
+	
+}
+#nazov_prip{
+	width:70%;
+	
+}
+#podr_prip{
+	width:70%;
+	height:60%;
 	
 }
 #podrobnosti{
 	position:relative;
-	width:80%;
-	left:10%;
+	width:70%;
+	left:15%;
 	background-color:white;
 	text-align:left;
 	vertical-align:center;
-	height:200px;
+	height:70%;
 
 }
 #vymaz_button{
