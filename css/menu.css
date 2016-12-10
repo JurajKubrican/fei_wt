@@ -185,3 +185,18 @@
 .navbar-brand{
   font-size:30px;
 }
+@media screen{
+  .print-img{
+    display:none;
+  }
+}
+
+@media print{
+
+  #main_navbar{
+    display:none;
+  }
+  .print-img{
+    width:80%;
+  }
+}

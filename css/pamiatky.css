@@ -46,7 +46,7 @@ h1{
  .col> h1{
    visibility: hidden;
  }
-
+@media all{
 .bgimg{
   position: absolute;
   background-position: center;
@@ -59,37 +59,37 @@ h1{
   z-index: 150;
 }
 
-#bgimg1{
-  background-image: url("../img/stary_most.jpg");
+  #bgimg1{
+    background-image: url("../img/stary_most.jpg");
+  }
+  #bgimg2{
+    background-image: url("../img/solivar_small.jpg");
+  }
+  #bgimg3{
+    background-image: url("../img/stanica_small.jpg");
+  }
+  #bgimg4{
+    background-image: url("../img/studna_small.jpg");
+  }
+  #bgimg5{
+    background-image: url("../img/skalnate_pleso_small.jpg");
+  }
+  #bgimg6{
+    background-image: url("../img/mlyn_jana_small.jpg");
+  }
+  #bgimg7{
+    background-image: url("../img/hvezdaren_presov_small.jpg");
+  }
+  #bgimg8{
+    background-image: url("../img/ludwigov_small.jpg");
+  }
+  #bgimg9{
+    background-image: url("../img/tabacka_small.jpg");
+  }
+  #bgimg10{
+    background-image: url("../img/cerveny_most_small.jpg");
+  }
 }
-#bgimg2{
-  background-image: url("../img/solivar_small.jpg");
-}
-#bgimg3{
-  background-image: url("../img/stanica_small.jpg");
-}
-#bgimg4{
-  background-image: url("../img/studna_small.jpg");
-}
-#bgimg5{
-  background-image: url("../img/skalnate_pleso_small.jpg");
-}
-#bgimg6{
-  background-image: url("../img/mlyn_jana_small.jpg");
-}
-#bgimg7{
-  background-image: url("../img/hvezdaren_presov_small.jpg");
-}
-#bgimg8{
-  background-image: url("../img/ludwigov_small.jpg");
-}
-#bgimg9{
-  background-image: url("../img/tabacka_small.jpg");
-}
-#bgimg10{
-  background-image: url("../img/cerveny_most_small.jpg");
-}
-
 #left,#right2,#left3,#right4,#left5 {
 
   background-image:linear-gradient(#3088A6,#1f5c71);
@@ -144,5 +144,11 @@ h1{
   }
   h1{
     height: 10ex;
+  }
+}
+
+@media print{
+  .col{
+     border:1px solid black!important;
   }
 }
