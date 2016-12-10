@@ -4,7 +4,7 @@
   position:absolute;
   width:100%;
   height:100%;
-  z-index:-1;
+  z-index:0;
 }
 #parallax img{
   width:300px;
@@ -13,7 +13,7 @@
 }
 body{
   overflow: hidden;
-  height:190px
+  height: 100vh;
 }
 video{
   z-index: -2;
@@ -22,7 +22,9 @@ video{
   min-height: 100vh;
   min-width: 100vw;
 }
-
+.navbar.navbar-default{
+  z-index:2;
+}
 
 #parallax li:nth-child(1){
   margin:30vh 0 0 0vw;
