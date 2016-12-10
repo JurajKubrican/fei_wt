@@ -13,7 +13,7 @@
 }
 body{
   overflow: hidden;
-
+  height:190px
 }
 video{
   z-index: -2;
