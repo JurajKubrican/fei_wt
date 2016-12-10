@@ -1,5 +1,3 @@
-var infowindow;
-var dataJSON;
 (function($){
   ('use strict');
 
@@ -34,7 +32,6 @@ var dataJSON;
     });
     $('.timeline-item').click(function(e){
       var id = $(e.target).data('id');
-      console.log(id);
       $('.tooltipster[data-id=' + id + ']').tooltipster('open');
       $('.tooltipster:not([data-id=' + id + '])').tooltipster('close');
     })
@@ -42,7 +39,6 @@ var dataJSON;
   }
 
   function showPamiatky(data){
-    console.log(data);
     var ret = '<div class="timeline">';
     var minYear = 9999, maxYear = 0;
     for(i in data){
@@ -59,7 +55,12 @@ var dataJSON;
       ret += '<div class="timeline-item" data-id="' + i + '" style="left:' + left +'%;"></div>';
     }
 
-      return ret + '</div>';
+    var numYearMarkers = 10
+    var delta = (maxYear - minYear)/numYearMarkers
+    for(i = 0;i <= numYearMarkers; i++){
+      ret += '<div class="timeline-year" style="left:' + (10 * i) + '%;">' + Math.floor(minYear +  i * delta ) + '</div>'
+    }
+    return ret + '</div>';
   }
 
   function showOnMap(pamiatka,i){
@@ -86,39 +87,3 @@ var dataJSON;
   }
 
 }(jQuery))
-
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-        center: {
-            lat: 48.4350,
-            lng: 19.2726
-        },
-        zoom: 7
-    });
-    infowindow = new google.maps.InfoWindow();
-
-    $.get('js/pamiatky.json',function(data){
-      for(i in data){
-        //console.log(data[i]);
-        var pos = new google.maps.LatLng(data[i].sirka,data[i].dlzka);
-            var marker = new google.maps.Marker({
-                position: pos,
-                map: map,
-                title: data[i].nazov + "\nVznik: " + data[i].rokVzniku
-            });
-            marker.setMap(map);
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(data[i].nazov + " ," + data[i].rokVzniku);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
-      }
-    });
-
-    google.maps.event.addDomListener(window, "resize", function() {
-        var center = map.getCenter();
-        google.maps.event.trigger(map, "resize");
-        map.setCenter(center);
-    });
-}
