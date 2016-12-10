@@ -57,6 +57,23 @@ function breadcrumbs() {
 
 }
 
+
+function getScoreHi(game,newScore) {
+    var score = Math.max(getCookie(game),newScore);
+    setCookie(score, game, 600000);
+    return score || '-';
+}
+
+function getScoreLow(newScore,game) {
+    var oldScore = getCookie(game);
+    if(getCookie(game) === '')
+     oldScore = newScore;
+    oldScore = parseInt(oldScore);
+    var score = Math.min(oldScore,newScore);
+    setCookie(game, score, 600000);
+    return score || '0';
+}
+
 document.addEventListener("DOMContentLoaded",function(){
   checkVisitsCookie();
   breadcrumbs();
