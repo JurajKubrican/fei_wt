@@ -1,6 +1,10 @@
 $(document).ready(function() {
   leftoffset = $('#canvas').offset().left;
   topoffset = $('#canvas').offset().top;
+  var minutesLabel = document.getElementById("minutes");
+  var secondsLabel = document.getElementById("seconds");
+  var totalSeconds = 0;
+  var interval;
        $('.block').draggable({
            containment:'window',
            stack: '.block',
@@ -12,12 +16,37 @@ $(document).ready(function() {
         });
 
         function handleDrop(e,ui){
+          if (totalSeconds == 0) interval = setInterval(setTime, 1000);
           var sol=[checkSolution1(),checkSolution2(),checkSolution3(),checkSolution4()];
           for (var i = 0; i < 4; i++) {
-            if (sol[i] === true)
+            if (sol[i] === true){
+              document.getElementById('minutes_new').innerHTML = pad(parseInt(totalSeconds/60));
+              document.getElementById('seconds_new').innerHTML = pad(totalSeconds%60);
               $('#modal').show();
+              clearInterval(interval);
+            }
           }
         }
+
+
+        function setTime(){
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds%60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds/60));
+        }
+
+        function pad(val)
+       {
+           var valString = val + "";
+           if(valString.length < 2)
+           {
+               return "0" + valString;
+           }
+           else
+           {
+               return valString;
+           }
+       }
 
         function checkSolution1(){
           if (7 <= Math.abs($('#parallelogram').offset().left - leftoffset - 0)) return false;
@@ -185,6 +214,7 @@ $(document).ready(function() {
        var angle = 90;
 
        $('#parallelogram').click(function() {
+         if (totalSeconds == 0) interval = setInterval(setTime, 1000);
         $(this).css ({
                '-webkit-transform': 'rotate(' + angle + 'deg) skew(-45deg)',
                   '-moz-transform': 'rotate(' + angle + 'deg) skew(-45deg)',
@@ -195,10 +225,12 @@ $(document).ready(function() {
       });
 
       $('#square').click(function() {
+        if (totalSeconds == 0) interval = setInterval(setTime, 1000);
         angle+=90;
      });
 
      $('.triangle').click(function() {
+       if (totalSeconds == 0) interval = setInterval(setTime, 1000);
        $(this).css ({
            '-webkit-transform': 'rotate(' + angle + 'deg)',
               '-moz-transform': 'rotate(' + angle + 'deg)',
