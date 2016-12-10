@@ -7,7 +7,7 @@ var Checkers = (function($,swal){
   function buildBoard(boardEl){
 
     root = $(boardEl);
-    root.append($('<textarea>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
+    root.append($('<textarea>',{id:'cehckers-result',readonly:true,rows:2,class:'form-control',html:'balls left:44\nmoves:0'}));
     //root.append($('<button>',{id:'cehckers-reset',readonly:true,rows:2,class:'form-control',html:'balls:44\nmoves:0'}));
 
     var board =[
@@ -162,13 +162,13 @@ var Checkers = (function($,swal){
       revert: true,
     });
     middleBall.remove();
-
-    if (isEndGame()) {
-        swal('you suck at this game');
-    }
     var results =
-    'balls:' +  $('.checkers-ball',boardEl).length +
+    'balls left:' +  $('.checkers-ball',boardEl).length +
     '\nmoves:' + ++moves;
+    if (isEndGame()) {
+        swal('Game over\n' + results);
+    }
+
     $('#cehckers-result',boardEl).html(results);
 
   }
