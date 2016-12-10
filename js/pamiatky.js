@@ -9,7 +9,7 @@
   function loadPamiatky(url){
     $.get(url,function(data){
       //data = JSON.parse(data);
-      console.log(data);
+      //console.log(data);
       $('#pamiatky').html(walkMenu(data,0));
     });
   }
