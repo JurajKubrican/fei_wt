@@ -13,48 +13,48 @@
 }
 body{
   overflow: hidden;
-  height:100vh;
-  width:100vw;
+
 }
 video{
   z-index: -2;
   top: 40px;
   position: fixed;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 
-#parallax > li:nth-child(1){
+#parallax li:nth-child(1){
   margin:30vh 0 0 0vw;
 }
-#parallax > li:nth-child(2){
+#parallax li:nth-child(2){
   margin:67vh 0 0 75vw;
 }
-#parallax > li:nth-child(3){
+#parallax li:nth-child(3){
   margin:10vh 0 0 27vw;
 }
 
-#parallax > li:nth-child(4){
+#parallax li:nth-child(4){
   margin:40vh 0 0 27vw;
 }
-#parallax > li:nth-child(5){
-  margin:73vh 0 0 27vw;
+#parallax li:nth-child(5){
+  margin:70vh 0 0 27vw;
 }
-#parallax > li:nth-child(6){
+#parallax li:nth-child(6){
   margin:20vh 0 0 51vw;
 }
 
-#parallax > li:nth-child(7){
+#parallax li:nth-child(7){
   margin:52vh 0 0 51vw;
 }
-#parallax > li:nth-child(8){
+#parallax li:nth-child(8){
   margin:55vh 0 0 3vw;
 }
-#parallax > li:nth-child(9){
+#parallax li:nth-child(9){
   margin:10vh 0 0 75vw;
 }
 
-#parallax > li:nth-child(10){
+#parallax li:nth-child(10){
   margin:40vh 0 0 75vw;
 }
 
